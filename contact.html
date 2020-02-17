@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/logo_o.ico">
+
+   <!-- CSS links -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Fonts links -->
+    <link rel="stylesheet" href="https://use.typekit.net/qmt1wjz.css">
+
+    <title>#I am Part of the Cure</title>
+</head>
+<main>
+    <!-- HEADER  -->
+    <header id="header-contact">
+        <div id="logo-header">
+            <img src="images/logo-green.svg" alt="Green Logo">
+        </div>
+        <!-- Hamburger Menu -->
+        <nav id="hamburger-menu">
+            <ul>
+                <li><a href="index.html"></a>HOME</li>
+                <li><a href="about.html"></a>ABOUT</li>
+                <li><a href="stories.html"></a>STORIES</li>
+                <li><a href="info.html"></a>INFO</li>
+                <li><a href="contact.html"></a>CONTACT</li>
+            </ul>
+            <button>donate now</button>
+            <!-- Social Media Header -->
+            <div id="social-media-header">
+                <a href="facebook.com"><img src="images/facebook-white.svg" alt="Facebook"></a>
+                <a href="instagram.com"><img src="images/instagram-white.svg" alt="Instagram"></a>
+                <a href="snapchat.com"><img src="images/snap-white.svg" alt="Snapchap"></a>
+                <a href="tiktok.com"><img src="images/tiktok-white.svg" alt="TikTok"></a>
+            </div>
+        </nav>
+    </header>
+    <!-- BODY -->
+    <body>
+        <!-- Contact form + Info  -->
+        <section id="contact-parent">
+            <h1 class="hidden">Contact form and general information.</h1>
+            <div id="contact-form">
+                <!-- Confidentiality info -->
+                <h1>TAKE PART</h1>
+                <p>
+                    It's ok. You don't need to give us your info if you don't want to. This is a safe space.
+                </p>
+                <!-- Contact form -->
+                <div id="contact-form-child">
+                <form method="post" action="data/contact.php">
+                    <label for="name">Name:  (optional)</label>
+                    <input name="name" type="text" id="name" size="30">
+            
+                    <label for="phone">Phone Number:  (optional)</label>
+                    <input name="phone" type="number" id="phone" size="30">
+            
+                    <label for="email">Email:</label>
+                    <input name="email" type="email" required id="email" size="50">
+            
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" required cols="50" rows="8"></textarea>
+            
+                    <button id="submit">submit</button>
+                  </form>
+                </div>
+                <!-- Extra info -->
+                <div id="extra-info">
+                    <p id="main-description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio quae illo sapiente minima dolore quia ipsum quam similique voluptates, voluptas dolorem saepe nisi deleniti maxime necessitatibus libero ad esse? Facere.
+                    </p>
+                    <div id="features-list">
+                        <!-- feature 1 -->
+                        <div id="feature">
+                            <img src="images/checkmark.svg" alt="checkmark">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                        </div>
+                        <!-- feature 2 -->
+                        <div id="feature">
+                            <img src="images/checkmark.svg" alt="checkmark">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                        </div>
+                        <!-- feature 3 -->
+                        <div id="feature">
+                            <img src="images/checkmark.svg" alt="checkmark">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                        </div>
+                        <!-- feature 4 -->
+                        <div id="feature">
+                            <img src="images/checkmark.svg" alt="checkmark">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+    <!-- FOOTER -->
+    <footer>
+        <img id="logo-footer" src="images/logo-green.svg" alt="Green Logo">
+        <!-- Footer menu -->
+        <nav>
+            <ul>
+                <li><a href="index.html"></a>HOME</li>
+                <li><a href="about.html"></a>ABOUT</li>
+                <li><a href="stories.html"></a>STORIES</li>
+                <li><a href="info.html"></a>INFO</li>
+                <li><a href="contact.html"></a>CONTACT</li>
+            </ul>
+        </nav>
+        <!-- Footer Social Media -->
+        <div id="social-media-footer">
+            <a href="facebook.com"><img src="images/facebook-green.svg" alt="Facebook"></a>
+            <a href="instagram.com"><img src="images/instagram-green.svg" alt="Instagram"></a>
+            <a href="snapchat.com"><img src="images/snap-green.svg" alt="Snapchap"></a>
+            <a href="tiktok.com"><img src="images/tiktok-green.svg" alt="TikTok"></a>
+        </div>
+        <!-- Footer Copyrights -->
+        <div id="copyrights">
+            <h3>In association with <a href="hivaidsconnection.com">HIV/AIDS Connection</a></h3>
+            <h3>I am Part Of the Cure &copy; 2020</h3>
+        </div>
+    </footer>
+    <script src="js/main.js" type="module"></script>
+</main>
+</html>
