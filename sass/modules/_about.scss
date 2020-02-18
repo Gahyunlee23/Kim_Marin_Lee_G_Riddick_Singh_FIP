@@ -74,7 +74,7 @@
 //About us description - Section
 #img-div {
     #about-london-div {
-        height: 180px;
+        max-width: 100%;
     }
 
     #about-campaign {
@@ -142,4 +142,94 @@
             }
         }
     }
+}
+
+//----------------> QUERIES
+
+//media query 768px ---TABLET---
+@media screen and (min-width: 48em) {
+    #header-about {
+
+        #logo-header {
+
+            img {
+                max-width: 15%;
+            }
+        }
+
+        #hero-text{
+
+            h1 {
+
+                font-size: 3.5em;
+            }
+        } 
+
+        #hero-buttons {
+
+            button {
+                font-size: 1.2em;
+            }
+        }
+    }
+
+    #mission-vision {
+
+        p {
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+    }
+
+    #img-div {
+
+        #about-campaign {
+
+            p {
+                margin-left: 20%;
+                margin-right: 20%;
+            }
+
+            h1 {
+                margin-top: 10%;
+            }
+        }
+
+        #what-we-do {
+            display: flex;
+            flex-direction: row;
+    
+            #text-right {
+                h1 {
+                    margin-top: 80%;
+                }
+
+                p {
+                    margin-left: 15%;
+                    margin-right: 15%;
+                }
+            }
+        }
+
+        #what-we-believe {
+            display: flex;
+            flex-direction: row;
+    
+            #text-left {
+                order: -1;
+
+                h1 {
+                    margin-top: 80%;
+                }
+
+                p {
+                    margin-left: 15%;
+                    margin-right: 15%;
+                }
+            }
+        }
+    }
+
+    
+
 }

@@ -127,3 +127,78 @@
     }
 }
 
+//----------------> QUERIES
+
+//media query 768px ---TABLET---
+@media screen and (min-width: 48em) {
+    #header-index {
+
+        #logo-header {
+
+            img {
+                max-width: 15%;
+            }
+        }
+
+        #hero-text{
+
+            h1 {
+
+                font-size: 3.5em;
+            }
+        } 
+
+        #hero-buttons {
+
+            button {
+                font-size: 1.2em;
+            }
+        }
+    }
+
+    #real-stories-home {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        #section-container-1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            p {
+                margin-left: 15%;
+                margin-right: 15%;
+            }
+        }
+    }
+
+    #take-part-home {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        #section-container-1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        #section-container-2 {
+            order: -1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h1 {
+                margin-top: 45%;
+            }
+
+            p {
+                margin-left: 15%;
+                margin-right: 15%;
+            }
+        }
+    }
+}
+
