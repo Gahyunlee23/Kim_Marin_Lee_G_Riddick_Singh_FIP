@@ -107,3 +107,29 @@ footer {
     }
 
 }
+
+//media query 1024 ---DESKTOP SMALL---
+@media screen and (min-width: 64em) {
+    footer {
+        #logo-footer {
+            width: 15%;
+
+        }
+        nav {
+            ul {
+                li {
+                    a {
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
+
+        #copyrights {
+            h3 {
+                font-size: 0.8em;
+            }
+        }
+    }
+
+ }

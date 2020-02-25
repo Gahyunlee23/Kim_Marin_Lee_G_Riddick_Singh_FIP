@@ -168,3 +168,40 @@
         }
     }
 }
+
+//media query 1024 ---DESKTOP SMALL---
+@media screen and (min-width: 64em) {
+    #header-contact {
+        #logo-header {
+            img {
+                max-width: 10%;
+            }
+        }
+        #hero-buttons {
+            padding-top: 0%;
+
+            button {
+                padding: 0.5% 3%;
+            }
+        }
+    }
+
+    #contact-parent {
+        #extra-info {
+            height: 60%;
+            margin-top: 35%;
+            
+            #feature {
+                p {
+                    margin-bottom: 4.2%;
+                }
+            }
+        }
+
+        #contact-form {
+            height: 60%;
+            margin-top: 35%;
+        }
+    }
+
+}
