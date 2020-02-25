@@ -14,10 +14,6 @@
         }
     }
 
-    nav {
-        display: none; //hamburger menu goes here (CHANGE!)
-    }
-
     #hero-text {
         h1 {
             font-family: $title;
@@ -107,6 +103,9 @@
                 font-size: 3em;
                 text-align: center;
                 margin: 15% 5% 5% 5%;
+                -webkit-text-fill-color: transparent; 
+                -webkit-text-stroke-width: 2px;
+                -webkit-text-stroke-color: $pink;
             }
 
             p {
@@ -132,6 +131,9 @@
                 font-size: 3em;
                 text-align: center;
                 margin: 15% 7% 5% 7%;
+                -webkit-text-fill-color: transparent; 
+                -webkit-text-stroke-width: 2px;
+                -webkit-text-stroke-color: $pink;
             }
 
             p {
@@ -229,7 +231,5 @@
             }
         }
     }
-
-    
 
 }

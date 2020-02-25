@@ -14,10 +14,6 @@
         }
     }
 
-    nav {
-        display: none; //hamburger menu goes here (CHANGE!)
-    }
-
     #hero-text {
         h1 {
             font-family: $title;
@@ -116,6 +112,58 @@
             display: block;
             margin-left: auto;
             margin-right: auto;
+        }
+    }
+}
+
+//----------------> QUERIES
+
+//media query 768px ---TABLET---
+@media screen and (min-width: 48em) {
+    #header-story1 {
+
+        #logo-header {
+
+            img {
+                max-width: 15%;
+            }
+        }
+
+        #hero-text{
+
+            h1 {
+
+                font-size: 3.5em;
+            }
+        } 
+
+        #hero-buttons {
+
+            button {
+                font-size: 1.2em;
+            }
+        }
+    }
+
+    #more-stories {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        max-width: 100%;
+        background-color: $light-grey;
+
+        #stories-parent {
+            width: 40%;
+            margin-top: 10%;
+            margin-bottom: 10%;
+
+            h2 {
+                margin-top: 10%;
+            }
+
+            button {
+                width: 35%;
+            }
         }
     }
 }

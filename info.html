@@ -20,26 +20,33 @@
     <!-- HEADER  -->
     <header id="header-info">
         <div id="logo-header">
-            <img src="images/logo-yellow.svg" alt="yellow Logo">
+            <a href="index.html">
+                <img src="images/logo-yellow.svg" alt="Green Logo">
+            </a>
         </div>
         <!-- Hamburger Menu -->
-        <nav id="hamburger-menu">
-            <ul>
-                <li><a href="index.html"></a>HOME</li>
-                <li><a href="about.html"></a>ABOUT</li>
-                <li><a href="stories.html"></a>STORIES</li>
-                <li><a href="info.html"></a>INFO</li>
-                <li><a href="contact.html"></a>CONTACT</li>
-            </ul>
-            <button>donate now</button>
-            <!-- Social Media Header -->
-            <div id="social-media-header">
-                <a href="facebook.com"><img src="images/facebook-white.svg" alt="Facebook"></a>
-                <a href="instagram.com"><img src="images/instagram-white.svg" alt="Instagram"></a>
-                <a href="snapchat.com"><img src="images/snap-white.svg" alt="Snapchap"></a>
-                <a href="tiktok.com"><img src="images/tiktok-white.svg" alt="TikTok"></a>
-            </div>
-        </nav>
+        <div class="menu-collapsed">
+            <div class="bar"></div>
+            <!-- menu options -->
+            <nav>
+                <ul>
+                    <li><a href="index.html" id="home">HOME</a></li>
+                    <li><a href="about.html" id="about">ABOUT</a></li>
+                    <li><a href="stories.html" id="stories">STORIES</a></li>
+                    <li><a href="info.html" id="info">INFO</a></li>
+                    <li><a href="contact.html" id="contact">CONTACT</a></li>
+                </ul>
+                <!-- Donate now button -->
+                <button id="donate-button">donate now</button>
+                <!-- Social Media Header -->
+                <div id="social-media-header">
+                    <a href="facebook.com"><img src="images/facebook-white.svg" alt="Facebook"></a>
+                    <a href="instagram.com"><img src="images/instagram-white.svg" alt="Instagram"></a>
+                    <a href="snapchat.com"><img src="images/snap-white.svg" alt="Snapchap"></a>
+                    <a href="tiktok.com"><img src="images/tiktok-white.svg" alt="TikTok"></a>
+                </div>
+            </nav>
+        </div>
         <!-- Hero Text + Buttons -->
         <div id="hero-text">
             <h1>Something interesting here.</h1>
@@ -84,7 +91,7 @@
             <!-- Info 2 -->
             <div id="flex-parent">
                 <img src="images/information-illustration2.svg" alt="Illustration 2">
-                <div id="flex-child">
+                <div id="flex-child-middle">
                     <h2>Secondary Title</h2>
                     <p>
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi velit quas perferendis minus reprehenderit, illum natus. Quia, obcaecati quidem earum eos soluta nesciunt nulla reprehenderit laudantium molestias voluptate harum ratione.
@@ -111,11 +118,11 @@
         <!-- Footer menu -->
         <nav>
             <ul>
-                <li><a href="index.html"></a>HOME</li>
-                <li><a href="about.html"></a>ABOUT</li>
-                <li><a href="stories.html"></a>STORIES</li>
-                <li><a href="info.html"></a>INFO</li>
-                <li><a href="contact.html"></a>CONTACT</li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="stories.html">STORIES</a></li>
+                <li><a href="info.html">INFO</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
             </ul>
         </nav>
         <!-- Footer Social Media -->

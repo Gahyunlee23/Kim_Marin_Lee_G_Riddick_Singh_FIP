@@ -14,10 +14,6 @@
         }
     }
 
-    nav {
-        display: none; //hamburger menu goes here (CHANGE!)
-    }
-
     #hero-text {
         h1 {
             font-family: $title;
@@ -98,13 +94,13 @@
         }
 
         button {
-            color: $dark-grey;
-            background-color: white;
+            color: $blue;
+            background-color: transparent;
             padding: 1% 4%;
             margin: 5% 5% 15% 5%;
             font-family: $text;
             font-size: 1em;
-            border: white thin;
+            border: 2px solid $blue;
             border-radius: 50px;
             display: block;
             margin-left: auto;
@@ -113,3 +109,58 @@
     }
 }
 
+//----------------> QUERIES
+
+//media query 768px ---TABLET---
+@media screen and (min-width: 48em) {
+    #header-stories {
+
+        #logo-header {
+
+            img {
+                max-width: 15%;
+            }
+        }
+
+        #hero-text{
+
+            h1 {
+
+                font-size: 3.5em;
+            }
+        } 
+
+        #hero-buttons {
+
+            button {
+                font-size: 1.2em;
+            }
+        }
+    }
+
+    #stories-description {
+
+        p {
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+    }
+
+    #stories-flexbox {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        #story {
+            width: 50%;
+
+            img {
+                max-width: 90%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+}

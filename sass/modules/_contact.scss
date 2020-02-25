@@ -14,10 +14,6 @@
             margin: 5% 0 0 5%;
         }
     }
-
-    nav {
-        display: none; //hamburger menu goes here (CHANGE!)
-    }
 }
 
 //Contact form + Etra info
@@ -42,13 +38,13 @@
             color: white;
             margin: 5%;
             font-size: 1em;
+            letter-spacing: 1px;
         }
     }
 
     #extra-info {
         background-color: $dark_grey;
         border: $green solid thick;
-        margin-top: 5%;
     }
 
     //actual contact form 
@@ -60,6 +56,7 @@
             font-size: 1em;
             display: block;
             margin-left: 5%;
+            letter-spacing: 1px;
         }
 
         input, textarea {
@@ -103,6 +100,8 @@
 
         #features-list {
             display: block;
+            margin-bottom: 10%;
+            margin-left: 4%;
         }
 
         #feature {
@@ -111,7 +110,58 @@
             justify-content: center;
             padding: 3%;
             margin-left: 7%;
+
+            p {
+                color: white;
+                font-family: $text;
+                font-size: 1em;
+                margin-left: 5%;
+                width: 70%;
+            }
         }
     }
 }
 
+//----------------> QUERIES
+
+//media query 768px ---TABLET---
+@media screen and (min-width: 48em) {
+    #header-contact {
+        height: 600px;
+
+        #logo-header {
+
+            img {
+                max-width: 15%;
+            }
+        }
+
+        #hero-text{
+
+            h1 {
+
+                font-size: 3.5em;
+            }
+        } 
+
+        #hero-buttons {
+
+            button {
+                font-size: 1.2em;
+            }
+        }
+    }
+
+    #contact-parent {
+        display: flex;
+        flex-direction: row;
+
+        #extra-info {
+            width: 50%;
+        }
+
+        #contact-form {
+            width: 50%;
+        }
+    }
+}
