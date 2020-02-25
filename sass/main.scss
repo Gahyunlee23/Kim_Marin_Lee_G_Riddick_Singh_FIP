@@ -1,10 +1,25 @@
 @import 'modules/_vars';
 @import 'modules/_index';
 @import 'modules/_hamburger_menu';
+@import 'modules/_footer';
+@import 'modules/_about';
+@import 'modules/_stories';
+@import 'modules/_contact';
+@import 'modules/_info';
+@import 'modules/_stories-individual';
+@import 'modules/_error';
+
+
+
+
 
 //GENERAL
 .hidden {
     display: none;
+}
+
+main {
+    background-color: $dark-grey;
 }
 
 
