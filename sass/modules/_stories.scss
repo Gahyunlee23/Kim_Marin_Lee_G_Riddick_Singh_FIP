@@ -41,6 +41,10 @@
             font-size: 1em;
             border: transparent;
             border-radius: 50px;
+            a{
+                text-decoration: none;
+                color: $dark-grey;
+            }
         }
     }
 }
@@ -105,6 +109,10 @@
             display: block;
             margin-left: auto;
             margin-right: auto;
+            a{
+                text-decoration: none;
+                color: $blue;
+            }
         }
     }
 }
