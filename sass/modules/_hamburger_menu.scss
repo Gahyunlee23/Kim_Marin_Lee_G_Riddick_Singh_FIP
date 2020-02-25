@@ -161,3 +161,28 @@
     line-height: 160%;
     letter-spacing:1px;
  }
+
+//media query 768px ---TABLET---
+@media screen and (min-width: 48em) {
+
+}
+
+//media query 1024 ---DESKTOP SMALL---
+@media screen and (min-width: 64em) {
+   .bar {
+       margin-left: 90%;
+   }
+
+   .menu-collapsed {
+      nav {
+         margin-top: 15%;
+         ul {
+            li {
+               a {
+                  font-size: 3em;
+               }
+            }
+         }
+      }
+   }
+}
