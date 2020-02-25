@@ -14,10 +14,6 @@
         }
     }
 
-    nav {
-        display: none; //hamburger menu goes here (CHANGE!)
-    }
-
     #hero-text {
         h1 {
             font-family: $title;
@@ -45,6 +41,10 @@
             font-size: 1em;
             border: transparent;
             border-radius: 50px;
+            a{
+                text-decoration: none;
+                color: $dark-grey;
+            }
         }
     }
 }
@@ -78,6 +78,7 @@
 
 //Info text
 #info-text {
+
     #main-title-info {
         font-family: $title;
         color: $yellow;
@@ -98,9 +99,33 @@
         #flex-child {
             h2 {
                 font-family: $title;
-                font-size: 2em;
+                font-size: 3em;
                 color: $yellow;
                 text-align: center;
+                -webkit-text-fill-color: transparent;
+                -webkit-text-stroke-width: 2px;
+                -webkit-text-stroke-color: $yellow;
+            }
+
+            p {
+                font-family: $text;
+                font-size: 1em;
+                color: white;
+                display: block;
+                text-align: center;
+                margin: 10%;
+            }
+        }
+
+        #flex-child-middle {
+            h2 {
+                font-family: $title;
+                font-size: 3em;
+                color: $yellow;
+                text-align: center;
+                -webkit-text-fill-color: transparent;
+                -webkit-text-stroke-width: 2px;
+                -webkit-text-stroke-color: $yellow;
             }
 
             p {
@@ -115,4 +140,78 @@
     }
 }
 
+//----------------> QUERIES
+
+//media query 768px ---TABLET---
+@media screen and (min-width: 48em) {
+    #header-info {
+
+        #logo-header {
+
+            img {
+                max-width: 15%;
+            }
+        }
+
+        #hero-text{
+
+            h1 {
+
+                font-size: 3.5em;
+            }
+        } 
+
+        #hero-buttons {
+
+            button {
+                font-size: 1.2em;
+            }
+        }
+    }
+
+    #info-description {
+
+        h1 {
+            font-size: 4em;
+        }
+
+        p {
+            margin-left: 15%;
+            margin-right: 15%;
+            margin-bottom: 0;
+        }
+    }
+
+    #info-text {
+
+        #flex-parent {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            img {
+                width: 40%;
+            }
+        }
+
+        #flex-child {
+            width: 40%;
+            margin-right: auto;
+
+            h2 {
+                margin-top: 15%;
+            }
+        }
+
+        #flex-child-middle {
+            width: 40%;
+            margin-left: auto;
+            order: -1;
+
+            h2 {
+                margin-top: 15%;
+            }
+        }
+    }
+}
 

@@ -14,39 +14,46 @@
     <!-- Fonts links -->
     <link rel="stylesheet" href="https://use.typekit.net/qmt1wjz.css">
 
-    <title>#I am Part of the Cure</title>
+    <title>I am Part of the Cure</title>
 </head>
 <main>
     <!-- HEADER  -->
     <header id="header-index">
         <div id="logo-header">
-            <img src="images/logo-green.svg" alt="Green Logo">
+            <a href="index.html">
+                <img src="images/logo-green.svg" alt="Green Logo">
+            </a>
         </div>
         <!-- Hamburger Menu -->
-        <nav id="hamburger-menu">
-            <ul>
-                <li><a href="index.html"></a>HOME</li>
-                <li><a href="about.html"></a>ABOUT</li>
-                <li><a href="stories.html"></a>STORIES</li>
-                <li><a href="info.html"></a>INFO</li>
-                <li><a href="contact.html"></a>CONTACT</li>
-            </ul>
-            <button>donate now</button>
-            <!-- Social Media Header -->
-            <div id="social-media-header">
-                <a href="facebook.com"><img src="images/facebook-white.svg" alt="Facebook"></a>
-                <a href="instagram.com"><img src="images/instagram-white.svg" alt="Instagram"></a>
-                <a href="snapchat.com"><img src="images/snap-white.svg" alt="Snapchap"></a>
-                <a href="tiktok.com"><img src="images/tiktok-white.svg" alt="TikTok"></a>
-            </div>
-        </nav>
+        <div class="menu-collapsed">
+            <div class="bar"></div>
+            <!-- menu options -->
+            <nav>
+                <ul>
+                    <li><a href="index.html" id="home">HOME</a></li>
+                    <li><a href="about.html" id="about">ABOUT</a></li>
+                    <li><a href="stories.html" id="stories">STORIES</a></li>
+                    <li><a href="info.html" id="info">INFO</a></li>
+                    <li><a href="contact.html" id="contact">CONTACT</a></li>
+                </ul>
+                <!-- Donate now button -->
+                <button id="donate-button">donate now</button>
+                <!-- Social Media Header -->
+                <div id="social-media-header">
+                    <a href="facebook.com"><img src="images/facebook-white.svg" alt="Facebook"></a>
+                    <a href="instagram.com"><img src="images/instagram-white.svg" alt="Instagram"></a>
+                    <a href="snapchat.com"><img src="images/snap-white.svg" alt="Snapchap"></a>
+                    <a href="tiktok.com"><img src="images/tiktok-white.svg" alt="TikTok"></a>
+                </div>
+            </nav>
+        </div>
         <!-- Hero Text + Buttons -->
         <div id="hero-text">
             <h1>Something interesting here.</h1>
         </div>
         <div id="hero-buttons">
-            <button><a href="donate.html"></a>donate now</button>
-            <button><a href="contact.html"></a>contact us</button>
+            <button><a href="donate.html">donate now</a></button>
+            <button><a href="contact.html">contact us</a></button>
         </div>
     </header>
     <!-- BODY -->
@@ -60,7 +67,7 @@
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus animi alias, exercitationem explicabo obcaecati debitis molestiae. Nesciunt, nostrum minima! Dolor illo officiis rerum suscipit, magnam quos eum impedit corrupti debitis.
                 </p>
-                <button><a href="stories.html"></a>read more</button>
+                <button><a href="stories.html">read more</a></button>
             </div>
         </section>
 
@@ -73,21 +80,23 @@
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus animi alias, exercitationem explicabo obcaecati debitis molestiae. Nesciunt, nostrum minima! Dolor illo officiis rerum suscipit, magnam quos eum impedit corrupti debitis.
                 </p>
-                <button><a href="info.html"></a>read more</button>
+                <button><a href="info.html">read more</a></button>
             </div>
         </section>
     </body>
     <!-- FOOTER -->
     <footer>
-        <img id="logo-footer" src="images/logo-green.svg" alt="Green Logo">
+        <a href="index.html">
+            <img id="logo-footer" src="images/logo-green.svg" alt="Green Logo">
+        </a>
         <!-- Footer menu -->
         <nav>
             <ul>
-                <li><a href="index.html"></a>HOME</li>
-                <li><a href="about.html"></a>ABOUT</li>
-                <li><a href="stories.html"></a>STORIES</li>
-                <li><a href="info.html"></a>INFO</li>
-                <li><a href="contact.html"></a>CONTACT</li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="stories.html">STORIES</a></li>
+                <li><a href="info.html">INFO</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
             </ul>
         </nav>
         <!-- Footer Social Media -->
@@ -103,6 +112,6 @@
             <h3>I am Part Of the Cure &copy; 2020</h3>
         </div>
     </footer>
-    <script src="js/main.js" type="module"></script>
+    <script src="js/main.js"></script>
 </main>
 </html>

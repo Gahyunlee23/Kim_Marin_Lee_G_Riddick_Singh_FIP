@@ -14,10 +14,6 @@
         }
     }
 
-    nav {
-        display: none; //hamburger menu goes here (CHANGE!)
-    }
-
     #hero-text {
         h1 {
             font-family: $title;
@@ -37,7 +33,6 @@
         padding-top: 10%;
 
         button {
-            color: $dark-grey;
             background-color: $green;
             padding: 1% 4%;
             margin: 5%;
@@ -45,6 +40,11 @@
             font-size: 1em;
             border: transparent;
             border-radius: 50px;
+            
+            a{
+                text-decoration: none;
+                color: $dark-grey;
+            }
         }
     }
 }
@@ -63,6 +63,9 @@
             font-size: 3em;
             text-align: center;
             margin: 5% 0 5% 0;
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: $green;
         }
 
         p {
@@ -84,6 +87,10 @@
             display: block;
             margin-left: auto;
             margin-right: auto;
+            a{
+                text-decoration: none;
+                color: $dark-grey;
+            }
         }
     }
 }
@@ -102,6 +109,9 @@
             font-size: 3em;
             text-align: center;
             margin: 5% 0 5% 0;
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: $green;
         }
 
         p {
@@ -123,7 +133,100 @@
             display: block;
             margin-left: auto;
             margin-right: auto;
+            a{
+                text-decoration: none;
+                color: $dark-grey;
+            }
         }
     }
+}
+
+//----------------> QUERIES
+
+//media query 768px ---TABLET---
+@media screen and (min-width: 48em) {
+    #header-index {
+
+        #logo-header {
+
+            img {
+                max-width: 15%;
+            }
+        }
+
+        #hero-text{
+
+            h1 {
+
+                font-size: 3.5em;
+            }
+        } 
+
+        #hero-buttons {
+
+            button {
+                font-size: 1.2em;
+            }
+        }
+    }
+
+    #real-stories-home {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        #section-container-1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            p {
+                margin-left: 15%;
+                margin-right: 15%;
+            }
+        }
+
+        img {
+            width: 60%;
+        }
+    }
+
+    #take-part-home {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        #section-container-1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        #section-container-2 {
+            order: -1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h1 {
+                margin-top: 45%;
+            }
+
+            p {
+                margin-left: 15%;
+                margin-right: 15%;
+            }
+        }
+
+        img {
+            width: 60%;
+        }
+    }
+}
+
+
+//media query 1200px ---DESKTOP SMALL---
+@media screen and (min-width: 75em) {
+    
 }
 

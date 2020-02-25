@@ -1,11 +1,13 @@
 //FOOTER
 footer {
+    background-color: $dark-grey;
+    
     #logo-footer {
         width: 20%;
         display: block;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 5%;
+        padding-top: 5%;
         margin-bottom: 15%;
     }
 
@@ -17,10 +19,14 @@ footer {
             margin: 0 5% 15% 5%;
 
             li {
-                color: white;
-                cursor: pointer;
-                font-family: $title;
-                font-size: 1.2em;
+
+                a {
+                    color: white;
+                    cursor: pointer;
+                    font-family: $title;
+                    font-size: 1.2em;
+                    text-decoration: none;
+                }
             }
         }
     }
@@ -29,7 +35,16 @@ footer {
                 width: 90%;
                 display: flex;
                 flex-direction: row;
-                justify-content: center;            
+                justify-content: center;      
+                
+                a {
+                    img {
+                        width: 40%;
+                        margin-bottom: 30%;
+                        display: block;
+                        margin-left: auto;
+                    }
+                }
         } 
         
     #copyrights {
@@ -44,9 +59,51 @@ footer {
            letter-spacing: 2px;
 
            a {
-            //    text-decoration: none;
                color: $light-grey;
            }
        }
     }
+}
+
+//----------------> QUERIES
+
+//media query 768px ---TABLET---
+@media screen and (min-width: 48em) {
+    footer {
+
+        #logo-footer {
+            margin-bottom: 3%;
+            margin-top: 20%;
+        }
+
+        nav {
+
+            ul {
+                margin-bottom: 10%;
+
+                li {
+                    font-size: 1.8em;
+                }
+            }
+        }
+
+        #social-media-footer {
+
+            a {
+
+                img {
+
+                    width: 30%;
+                }
+            }
+        }
+
+        #copyrights {
+            
+            h3 {
+                font-size: 1em;
+            }
+        }
+    }
+
 }

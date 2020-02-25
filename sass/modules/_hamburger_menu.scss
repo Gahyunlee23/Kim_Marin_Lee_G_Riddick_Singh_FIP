@@ -1,0 +1,163 @@
+//--------------------->MOBILE <= 22.8185nm
+.b-a {
+    transition: all .25s;
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 5px;
+    width: 40px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.95);
+ }
+ .menu-collapsed {
+    transition: all .25s;
+    // position: fixed;
+    top: 5%;
+    left: 80%;
+    height: 36px;
+    width: 36px;
+    z-index: 1;
+    cursor: pointer;
+    ul {
+       transition: all 0s;
+       position: fixed;
+       left: -9000px;
+    }
+    #social-media-header, #donate-button {
+       transition: all 0s;
+       position: fixed;
+       left: -9000px;
+    }
+    nav {
+        margin-top: 20%;
+        ul {
+            li {
+                a {
+                    font-family: $title;
+                    font-size: 2em;
+                }
+            }
+        }
+    }
+ }
+ .bar {
+    @extend .b-a;
+    // position: fixed;
+    left: 12px;
+    top: 24px;
+    margin-left: 80%;
+    margin-top: 5%;
+    &:before {
+       @extend .b-a;
+       top: -8px;
+    }
+    &:after {
+       @extend .b-a;
+       top: 8px;
+    }
+ }
+ .b-a-expanded {
+    transition: all .25s;
+    top: -0px;
+ }
+ .menu-expanded {
+    transition: all .25s;
+    text-align: left;
+    height: 100%;
+    width: 100%;
+    border-radius: 0px;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: $dark-grey;
+    ul {
+       transition: all 0s;
+       position: relative;
+       left: 0;
+       z-index: 2;
+    }
+    #social-media-header, #donate-button {
+       transition: all 0s;
+       position: relative;
+       left: 0;
+       z-index: 2;
+    }
+    a {
+       transition: all .15s;
+       text-decoration: none;
+       font-size: 2em;
+       margin-left: 10%;
+       color: #fff;
+       display:block;
+       margin-top: 5%;
+    }
+    .bar {
+       background-color: transparent;
+       transition: all .25s;
+       &:before {
+          @extend .b-a-expanded;
+          transform: rotate(45deg);
+       }
+       &:after {
+          @extend .b-a-expanded;
+          transform: rotate(-45deg);
+       }
+    }
+ }
+ #social-media-header {
+     display: flex;
+     flex-direction: row;
+     margin-top: 50%;
+     a {
+         img {
+             width: 30px;
+         }
+     }
+ }
+ #donate-button {
+     background-color: $yellow;
+     color: $dark-grey;
+     font-family: $text;
+     font-size: 1.2em;
+     padding: 2px 5px;
+     margin-left: 10%;
+     margin-top: 10%;
+     border: transparent;
+     border-radius: 25px;
+     width: 120px;
+ }
+
+ #home {
+     color: $green;
+ }
+
+ #about {
+     color: $blue;
+ }
+
+ #stories {
+     color: $yellow;
+ }
+
+ #info {
+     color: $pink;
+ }
+
+ #contact {
+     color: white;
+ }
+
+ 
+//  .row {
+//     padding-top:150px;
+//  }
+ h1 {
+    font-size: 3em;
+ }
+ h3 {
+    color:#999;
+ }
+ p {
+    line-height: 160%;
+    letter-spacing:1px;
+ }
