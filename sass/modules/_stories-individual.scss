@@ -117,6 +117,18 @@
 }
 
 //----------------> QUERIES
+//media query 667px ---MOBILE LANDSCAPE---
+@media screen and (min-width: 41.6875em) {
+    #header-story1 {
+
+        #logo-header {
+
+            img {
+                max-width: 15%;
+            }
+        }
+    }
+}
 
 //media query 768px ---TABLET---
 @media screen and (min-width: 48em) {
@@ -163,6 +175,44 @@
 
             button {
                 width: 35%;
+            }
+        }
+    }
+}
+
+//media query 1024 ---DESKTOP SMALL---
+@media screen and (min-width: 64em) {
+    #header-story1 {
+        #logo-header {
+            img {
+                max-width: 10%;
+            }
+        }
+        #hero-buttons {
+            padding-top: 0%;
+
+            button {
+                padding: 0.5% 3%;
+            }
+        }
+    }
+
+}
+
+//media query 1200px ---DESKTOP MEDIUM---
+@media screen and (min-width: 75em) {
+    #header-story1 {
+        #hero-text {
+            h1 {
+                font-size: 5.5em;
+            }
+        }
+    }
+
+    #more-stories {
+        #stories-parent {
+            button {
+                width: 25%;
             }
         }
     }

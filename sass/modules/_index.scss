@@ -125,7 +125,7 @@
             color: $dark-grey;
             background-color: $green;
             padding: 1% 4%;
-            margin: 5% 5% 30% 5%;
+            margin: 5% 5% 0% 5%;
             font-family: $text;
             font-size: 1em;
             border: transparent;
@@ -142,6 +142,18 @@
 }
 
 //----------------> QUERIES
+//media query 667px ---MOBILE LANDSCAPE---
+@media screen and (min-width: 41.6875em) {
+    #header-index {
+
+        #logo-header {
+
+            img {
+                max-width: 15%;
+            }
+        }
+    }
+}
 
 //media query 768px ---TABLET---
 @media screen and (min-width: 48em) {
@@ -242,5 +254,46 @@
         }
     }
 
+}
+
+
+//media query 1600px ---DESKTOP XLARGE---
+@media screen and (min-width: 100em) {
+    #header-index {
+        #hero-text {
+            h1 {
+                font-size: 4.5em;
+            }
+        }
+        #logo-header {
+            img {
+                max-width: 8%;
+            }
+        }
+    }
+
+    #real-stories-home {
+        img {
+            width: 115%;
+        }
+        #section-container-1 {
+            p {
+                margin-left: 20%;
+                margin-right: 20%;
+            }
+        }
+    }
+
+    #take-part-home {
+        img {
+            width: 115%;
+        }
+        #section-container-2 {
+            p {
+                margin-left: 20%;
+                margin-right: 20%;
+            }
+        }
+    }
 }
 

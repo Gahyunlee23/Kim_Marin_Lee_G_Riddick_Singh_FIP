@@ -118,6 +118,28 @@
 }
 
 //----------------> QUERIES
+//media query 667px ---MOBILE LANDSCAPE---
+@media screen and (min-width: 41.6875em) {
+    #header-stories {
+
+        #logo-header {
+
+            img {
+                max-width: 15%;
+            }
+        }
+    }
+
+    #stories-flexbox {
+        #story {
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+}
 
 //media query 768px ---TABLET---
 @media screen and (min-width: 48em) {
@@ -190,4 +212,32 @@
         }
     }
 
+}
+
+//media query 1600px ---DESKTOP XLARGE---
+@media screen and (min-width: 100em) {
+    #header-stories {
+        #hero-text {
+            h1 {
+                font-size: 4.5em;
+            }
+        }
+    }
+
+    #stories-flexbox {
+        #story {
+            p {
+                margin-left: 20%;
+                margin-right: 20%;
+            }
+
+            h1 {
+                font-size: 3em;
+            }
+
+            button {
+                padding: .5% 4%;
+            }
+        }
+    }
 }

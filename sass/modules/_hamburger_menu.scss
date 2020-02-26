@@ -162,9 +162,13 @@
     letter-spacing:1px;
  }
 
-//media query 768px ---TABLET---
-@media screen and (min-width: 48em) {
-
+//media query 667px ---MOBILE LANDSCAPE---
+@media screen and (min-width: 41.6875em) {
+   .menu-collapsed {
+       nav {
+           margin-top: 10%;
+       }
+   }
 }
 
 //media query 1024 ---DESKTOP SMALL---
@@ -173,9 +177,23 @@
        margin-left: 90%;
    }
 
+   #donate-button {
+      margin-top: 5%;
+   }
+
+   #social-media-header {
+      margin-top: 5%;
+
+      a {
+         img {
+            width: 50px;
+         }
+      }
+   }
+
    .menu-collapsed {
       nav {
-         margin-top: 15%;
+         margin-top: 10%;
          ul {
             li {
                a {
@@ -183,6 +201,47 @@
                }
             }
          }
+      }
+   }
+}
+
+//media query 1100px ---DESKTOP SMALL+---
+@media screen and (min-width: 68.75em) {
+   .menu-expanded {
+      a {
+         margin-top: 4%;
+      }
+   }
+}
+
+//media query 1200px ---DESKTOP MEDIUM---
+@media screen and (min-width: 75em) {
+   .menu-collapsed {
+       nav {
+           ul {
+               li {
+                   a {
+                       font-size: 2em;
+                   }
+               }
+           }
+       }
+   }
+
+   #social-media-header {
+      a {
+         img {
+            width: 40px;
+         }
+      }
+   }
+}
+
+//media query 1600px ---DESKTOP XLARGE---
+@media screen and (min-width: 100em) {
+   .menu-expanded {
+      a {
+         margin-top: 2.5%;
       }
    }
 }
