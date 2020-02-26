@@ -7,7 +7,7 @@ footer {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        padding-top: 5%;
+        padding-top: 20%;
         margin-bottom: 15%;
     }
 
@@ -75,13 +75,35 @@ footer {
 }
 
 //----------------> QUERIES
+//media query 667px ---MOBILE LANDSCAPE---
+@media screen and (min-width: 41.6875em) {
+    footer {
+        nav {
+            ul {
+                li {
+                    a {
+                        font-size: 2em;
+                    }
+                }
+            }
+        }
+
+        #social-media-footer {
+            a {
+                img {
+                    width: 30%;
+                }
+            }
+        }
+    }
+ }
 
 //media query 768px ---TABLET---
 @media screen and (min-width: 48em) {
     footer {
 
         #logo-footer {
-            margin-bottom: 3%;
+            margin-bottom: 10%;
             margin-top: 20%;
         }
 
@@ -97,6 +119,10 @@ footer {
 
                 li {
                     font-size: 1.8em;
+
+                    a {
+                        font-size: 1em;
+                    }
                 }
             }
         }
@@ -127,6 +153,7 @@ footer {
     footer {
         #logo-footer {
             width: 15%;
+            margin-top: 5%;
 
         }
 
@@ -153,3 +180,52 @@ footer {
     }
 
  }
+
+ //media query 1200px ---DESKTOP MEDIUM---
+@media screen and (min-width: 75em) {
+    footer {
+        #logo-footer {
+            width: 10%;
+            margin-bottom: 10%;
+        }
+
+        #logo-footer-contact {
+            width: 10%;
+            margin-bottom: 10%;
+        }
+    }
+}
+
+//media query 1400px ---DESKTOP LARGE---
+@media screen and (min-width: 87.5em) {
+    footer {
+        #logo-footer {
+            margin-top: 10%;
+        }
+    }
+}
+
+//media query 1600px ---DESKTOP XLARGE---
+@media screen and (min-width: 100em) {
+    footer {
+        #social-media-footer {
+            a {
+                img {
+                    margin-bottom: 50%;
+                }
+            }
+        }
+
+        nav {
+            ul {
+                margin: 0 10% 10% 10%;
+
+                li {
+                    font-size: 2em;
+                }
+            }
+        }
+    }
+}
+
+

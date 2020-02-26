@@ -141,6 +141,18 @@
 }
 
 //----------------> QUERIES
+//media query 667px ---MOBILE LANDSCAPE---
+@media screen and (min-width: 41.6875em) {
+    #header-info {
+
+        #logo-header {
+
+            img {
+                max-width: 15%;
+            }
+        }
+    }
+}
 
 //media query 768px ---TABLET---
 @media screen and (min-width: 48em) {
@@ -232,5 +244,48 @@
         }
     }
 
+}
+
+//media query 1600px ---DESKTOP XLARGE---
+@media screen and (min-width: 100em) {
+    #header-info {
+        #hero-text {
+            h1 {
+                font-size: 4.5em;
+            }
+        }
+    }
+
+    #info-description {
+        p {
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+
+        h1 {
+            font-size: 5em;
+        }
+    }
+
+    #info-text {
+        #main-title-info {
+            font-size: 5em;
+            margin-bottom: 10%;
+        }
+
+        #flex-parent {
+            #flex-child {
+                h2 {
+                    font-size: 4em;
+                }
+            }
+
+            #flex-child-middle {
+                h2 {
+                    font-size: 4em;
+                }
+            }
+        }
+    }
 }
 

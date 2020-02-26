@@ -126,6 +126,24 @@
 }
 
 //----------------> QUERIES
+//media query 667px ---MOBILE LANDSCAPE---
+@media screen and (min-width: 41.6875em) {
+    #header-contact {
+
+        #logo-header {
+
+            img {
+                max-width: 15%;
+            }
+        }
+    }
+
+    footer {
+        #logo-footer-contact {
+            padding-top: 10%;
+        }
+    }
+}
 
 //media query 768px ---TABLET---
 @media screen and (min-width: 48em) {
@@ -204,4 +222,76 @@
         }
     }
 
+}
+
+//media query 1200px ---DESKTOP MEDIUM---
+@media screen and (min-width: 75em) {
+    #contact-parent {
+        #contact-form {
+            margin-top: 30%;
+        }
+
+        #extra-info {
+            margin-top: 30%;
+
+            #features-list {
+                margin-bottom: 6.7%;
+            }
+        }
+    }
+}
+
+//media query 1400px ---DESKTOP LARGE---
+@media screen and (min-width: 87.5em) {
+    #header-contact {
+        height: 800px;
+    }
+
+    #contact-parent {
+        #extra-info {
+            #features-list {
+                margin-bottom: 13.5%;
+            }
+        }
+    }
+}
+
+//media query 1600px ---DESKTOP XLARGE---
+@media screen and (min-width: 100em) {
+    #contact-parent {
+        #contact-form {
+            h1 {
+                font-size: 5em;
+            }
+        }
+        #contact-form-child {
+            #submit {
+                margin-bottom: 11.7%;
+                padding: 0.5% 4%;
+            }
+
+            label {
+                font-size: 1.3em;
+            }
+        }
+
+        #extra-info {
+            #feature {
+                p {
+                    font-size: 1.2em;
+                    margin-left: 5%;
+                    margin-top: 4%;
+                    width: 62%;
+                }
+            }
+
+            #main-description {
+                padding-top: 0;
+            }
+
+            #features-list {
+                margin-bottom: 3.3%;
+            }
+        }
+    }
 }
