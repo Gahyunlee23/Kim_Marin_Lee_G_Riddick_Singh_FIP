@@ -1,7 +1,7 @@
 //--------------------->MOBILE <= 22.8185nm
 
 //HEADER
-#header-story1 {
+#header-story1, #header-story2, #header-story3, #header-story4, #header-story5, #header-story6 {
     background-image: url(../images/stories-1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -46,29 +46,80 @@
     }
 }
 
+#header-story2 {
+    background-image: url(../images/stories-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#header-story3 {
+    background-image: url(../images/stories-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#header-story4 {
+    background-image: url(../images/stories-4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#header-story5 {
+    background-image: url(../images/stories-5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#header-story6 {
+    background-image: url(../images/stories-6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 //Story 1
 #stories-video {
-    img {
+    iframe {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
         max-width: 100%;
-        margin: 5% 0;
     }
 }
 
 #stories-info {
-    p {
+    // h1 {
+    //     margin-left: 10%;
+    //     font-size: 5em;
+    //     font-family: $title;
+    //     color: white;
+    // }
+    article {
         font-family: $text;
         margin: 5% 10%;
         color: white;
         text-align: justify;
         margin-bottom: 15%;
-    }
+        -webkit-columns: 2 200px;
+        -moz-columns: 2 200px;
+        columns: 2 200px;
+        -webkit-column-gap: 4em;
+        -moz-column-gap: 4em;
+        column-gap: 4em;
+        letter-spacing: 1.5px;
+        line-height: 1.7em;
 
-    img {
-        max-width: 80%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        padding-bottom: 10%;
+        img {
+            max-width: 100%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding-bottom: 10%;
+        }
     }
 }
 
@@ -119,7 +170,7 @@
 //----------------> QUERIES
 //media query 667px ---MOBILE LANDSCAPE---
 @media screen and (min-width: 41.6875em) {
-    #header-story1 {
+    #header-story1, #header-story2, #header-story3, #header-story4, #header-story5, #header-story6{
 
         #logo-header {
 
@@ -132,7 +183,7 @@
 
 //media query 768px ---TABLET---
 @media screen and (min-width: 48em) {
-    #header-story1 {
+    #header-story1, #header-story2, #header-story3, #header-story4, #header-story5, #header-story {
 
         #logo-header {
 
@@ -182,7 +233,7 @@
 
 //media query 1024 ---DESKTOP SMALL---
 @media screen and (min-width: 64em) {
-    #header-story1 {
+    #header-story1, #header-story2, #header-story3, #header-story4, #header-story5, #header-story6 {
         #logo-header {
             img {
                 max-width: 10%;
@@ -201,7 +252,7 @@
 
 //media query 1200px ---DESKTOP MEDIUM---
 @media screen and (min-width: 75em) {
-    #header-story1 {
+    #header-story1, #header-story2, #header-story3, #header-story4, #header-story5, #header-story6 {
         #hero-text {
             h1 {
                 font-size: 5.5em;
