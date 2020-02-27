@@ -14,7 +14,7 @@
     // position: fixed;
     top: 5%;
     left: 80%;
-    height: 36px;
+   //  height: 36px;
     width: 36px;
     z-index: 1;
     cursor: pointer;
@@ -29,7 +29,7 @@
        left: -9000px;
     }
     nav {
-        margin-top: 20%;
+      //   margin-top: 20%;
         ul {
             li {
                 a {
@@ -163,13 +163,13 @@
  }
 
 //media query 667px ---MOBILE LANDSCAPE---
-@media screen and (min-width: 41.6875em) {
-   .menu-collapsed {
-       nav {
-           margin-top: 10%;
-       }
-   }
-}
+// @media screen and (min-width: 41.6875em) {
+//    .menu-collapsed {
+//        nav {
+//          //   margin-top: 10%;
+//        }
+//    }
+// }
 
 //media query 1024 ---DESKTOP SMALL---
 @media screen and (min-width: 64em) {
