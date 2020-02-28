@@ -133,6 +133,7 @@
         justify-content: center;
         background-color: $light-grey;
         margin-bottom: 10%;
+        background-color: $dark-grey;
 
         img {
             max-width: 80%;
@@ -150,6 +151,16 @@
             margin-top: 5%;
         }
 
+        p {
+            font-family: $text;
+            color: white;
+            text-align: center;
+            font-size: 1em;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: 5%;
+        }
+
         button {
             color: $dark-grey;
             background-color: $blue;
@@ -163,6 +174,11 @@
             display: block;
             margin-left: auto;
             margin-right: auto;
+
+            a {
+                text-decoration: none;
+                color: $dark-grey;
+            }
         }
     }
 }

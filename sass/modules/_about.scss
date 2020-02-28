@@ -20,7 +20,7 @@
             font-weight: 400;
             font-size: 2.5em;
             text-align: center;
-            margin: 5% 10% 5% 10%;
+            margin: 15% 10% 5% 10%;
             color: white;
         }
     }
@@ -29,14 +29,14 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        padding-bottom: 10%;
-        padding-top: 10%;
+        // padding-bottom: 10%;
+        // padding-top: 10%;
 
         button {
             color: white;
             background-color: $pink;
             padding: 1% 4%;
-            margin: 5%;
+            margin: 0 5% 10% 5%;
             font-family: $text;
             font-size: 1em;
             border: transparent;
@@ -279,6 +279,57 @@
 
 }
 
+//media query 1500px ---DESKTOP XLARGE---
+@media screen and (min-width: 93.75em) {
+    #header-about {
+        #logo-header {
+            img {
+                width: 8%;
+            }
+        }
+    }
+
+    #mission-vision {
+        h1 {
+            font-size: 6em;
+        }
+
+        p {
+            font-size: 1.2em;
+        }
+    }
+
+    #img-div {
+        #about-campaign {
+            h1 {
+                font-size: 5em;
+            }
+
+            p {
+                font-size: 1.3em;
+            }
+        }
+
+        #what-we-do {
+            #text-right {
+                h1 {
+                    margin-top: 28%;
+                    font-size: 5em;
+                }
+            }
+        }
+
+        #what-we-believe {
+            #text-left {
+                h1 {
+                    margin-top: 28%;
+                    font-size: 5em;
+                }
+            }
+        }
+    }
+}
+
 //media query 1600px ---DESKTOP XLARGE---
 @media screen and (min-width: 100em) {
     #header-about {
@@ -286,6 +337,12 @@
             h1 {
                 font-size: 4.5em;
             }
+        }
+    }
+
+    #mission-vision {
+        h1 {
+            font-size: 6%;
         }
     }
 

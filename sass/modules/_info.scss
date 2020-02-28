@@ -20,7 +20,7 @@
             font-weight: 400;
             font-size: 2.5em;
             text-align: center;
-            margin: 5% 10% 5% 10%;
+            margin: 15% 10% 5% 10%;
             color: white;
         }
     }
@@ -29,14 +29,14 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        padding-bottom: 10%;
-        padding-top: 10%;
+        // padding-bottom: 10%;
+        // padding-top: 10%;
 
         button {
             color: $dark-grey;
             background-color: $yellow;
             padding: 1% 4%;
-            margin: 5%;
+            margin: 0 5% 10% 5%;
             font-family: $text;
             font-size: 1em;
             border: transparent;
@@ -73,7 +73,9 @@
     iframe {
         max-width: 100% !important;
         margin: 10% 0;
-        // width: 80% !important;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -245,6 +247,17 @@
         }
     }
 
+}
+
+//media query 1500px ---DESKTOP XLARGE---
+@media screen and (min-width: 93.75em) {
+    #header-info {
+        #logo-header {
+            img {
+                width: 8%;
+            }
+        }
+    }
 }
 
 //media query 1600px ---DESKTOP XLARGE---

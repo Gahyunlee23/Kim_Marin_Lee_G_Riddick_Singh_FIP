@@ -5,7 +5,7 @@
     position: absolute;
     left: 0;
     height: 5px;
-    width: 40px;
+    width: 50px;
     border-radius: 15px;
     background-color: rgba(255, 255, 255, 0.95);
  }
@@ -46,6 +46,7 @@
     left: 12px;
     top: 24px;
     margin-left: 80%;
+    cursor: pointer;
     margin-top: 5%;
     &:before {
        @extend .b-a;
@@ -234,6 +235,27 @@
             width: 40px;
          }
       }
+   }
+}
+
+//media query 1500px ---DESKTOP XLARGE---
+@media screen and (min-width: 93.75em) {
+   .menu-collapsed {
+       nav {
+           ul {
+               li {
+                   a {
+                       font-size: 2.6em;
+                   }
+               }
+           }
+       }
+   }
+
+   .menu-expanded {
+       a {
+           margin-top: 3%;
+       }
    }
 }
 

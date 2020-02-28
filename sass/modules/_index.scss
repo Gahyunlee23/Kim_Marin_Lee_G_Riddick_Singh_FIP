@@ -267,6 +267,34 @@
 
 }
 
+//media query 1500px ---DESKTOP XLARGE---
+@media screen and (min-width: 93.75em) {
+    #header-index {
+        #logo-header {
+            img {
+                width: 8%;
+            }
+        }
+    }
+
+    #real-stories-home {
+        #section-container-1 {
+            h1 {
+                font-size: 5em;
+            }
+        }
+    }
+
+    #take-part-home {
+        #section-container-2 {
+            h1 {
+                margin-top: 6%;
+                font-size: 5em;
+            }
+        }
+    }
+}
+
 
 //media query 1600px ---DESKTOP XLARGE---
 @media screen and (min-width: 100em) {
