@@ -65,9 +65,17 @@
 
     p {
         color: white;
-        text-align: center;
-        margin: 5% 10% 20% 10%;
+        text-align: justify;
+        margin: 5% 10% 20% 12%;
         font-family: $text;
+    }
+
+    #mission {
+        width: 50%;
+    }
+
+    #vision {
+        width: 50%;
     }
 }
 
@@ -197,6 +205,8 @@
             margin-left: 20%;
             margin-right: 20%;
         }
+
+
     }
 
     #img-div {
