@@ -150,6 +150,16 @@
             margin-top: 5%;
         }
 
+        p {
+            font-family: $text;
+            color: white;
+            text-align: center;
+            font-size: 1em;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: 5%;
+        }
+
         button {
             color: $dark-grey;
             background-color: $blue;
@@ -163,6 +173,11 @@
             display: block;
             margin-left: auto;
             margin-right: auto;
+
+            a {
+                text-decoration: none;
+                color: $dark-grey;
+            }
         }
     }
 }
@@ -213,7 +228,7 @@
         flex-direction: row;
         justify-content: space-evenly;
         max-width: 100%;
-        background-color: $light-grey;
+        background-color: $dark-grey;
 
         #stories-parent {
             width: 40%;

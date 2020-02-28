@@ -104,12 +104,12 @@ footer {
 
         #logo-footer {
             margin-bottom: 10%;
-            margin-top: 20%;
+            margin-top: 10%;
         }
 
         #logo-footer-contact {
             margin-bottom: 3%;
-            margin-top: 20%;
+            // margin-top: 20%;
         }
 
         nav {
@@ -201,6 +201,26 @@ footer {
     footer {
         #logo-footer {
             margin-top: 10%;
+            padding-top: 5%;
+        }
+    }
+}
+
+//media query 1500px ---DESKTOP XLARGE---
+@media screen and (min-width: 93.75em) {
+    footer {
+        #logo-footer {
+            margin-top: 0;
+        }
+
+        nav {
+            ul {
+                li {
+                    a {
+                        font-size: 1.5em;
+                    }
+                }
+            }
         }
     }
 }
