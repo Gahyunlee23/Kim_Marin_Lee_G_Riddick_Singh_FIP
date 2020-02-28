@@ -226,10 +226,14 @@
         #what-we-do {
             display: flex;
             flex-direction: row;
+
+            img {
+                width: 50%;
+            }
     
             #text-right {
                 h1 {
-                    margin-top: 80%;
+                    margin-top: 5%;
                 }
 
                 p {
@@ -242,12 +246,16 @@
         #what-we-believe {
             display: flex;
             flex-direction: row;
+
+            img {
+                width: 50%;
+            }
     
             #text-left {
                 order: -1;
 
                 h1 {
-                    margin-top: 80%;
+                    margin-top: 5%;
                 }
 
                 p {

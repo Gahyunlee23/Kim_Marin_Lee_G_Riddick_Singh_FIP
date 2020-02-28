@@ -133,7 +133,6 @@
         justify-content: center;
         background-color: $light-grey;
         margin-bottom: 10%;
-        background-color: $dark-grey;
 
         img {
             max-width: 80%;
@@ -229,7 +228,7 @@
         flex-direction: row;
         justify-content: space-evenly;
         max-width: 100%;
-        background-color: $light-grey;
+        background-color: $dark-grey;
 
         #stories-parent {
             width: 40%;

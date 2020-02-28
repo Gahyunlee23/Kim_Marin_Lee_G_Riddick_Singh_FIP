@@ -1,11 +1,15 @@
 //--------------------->MOBILE <= 22.8185nm
+nav {
+   margin-top: 20%;
+}
+
 .b-a {
     transition: all .25s;
     content: "";
     position: absolute;
     left: 0;
     height: 5px;
-    width: 50px;
+    width: 40px;
     border-radius: 15px;
     background-color: rgba(255, 255, 255, 0.95);
  }
@@ -174,6 +178,10 @@
 
 //media query 1024 ---DESKTOP SMALL---
 @media screen and (min-width: 64em) {
+   .b-a {
+      width: 50px;
+   }
+
    .bar {
        margin-left: 90%;
    }
