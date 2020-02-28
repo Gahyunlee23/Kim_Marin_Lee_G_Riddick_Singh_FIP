@@ -63,16 +63,17 @@
         font-family: $text;
         color: white;
         font-size: 1em;
-        text-align: center;
+        text-align: justify;
         margin: 5% 10% 5% 10%;
     }
 }
 
 //Info video
 #info-video {
-    img {
-        max-width: 100%;
+    iframe {
+        max-width: 100% !important;
         margin: 10% 0;
+        // width: 80% !important;
     }
 }
 
