@@ -1,7 +1,7 @@
 <?php
     // echo "dana is stupid!";
-    require('includes/connect.php');
-?>
+    // require('includes/connect.php');
+?> 
 
 
 
@@ -40,7 +40,7 @@
                 <ul>
                     <li><a href="index.html" id="home">HOME</a></li>
                     <li><a href="about.html" id="about">ABOUT</a></li>
-                    <li><a href="stories.html" id="stories">STORIES</a></li>
+                    <li><a href="stories.php" id="stories">STORIES</a></li>
                     <li><a href="info.html" id="info">INFO</a></li>
                     <li><a href="contact.html" id="contact">CONTACT</a></li>
                 </ul>
@@ -84,7 +84,7 @@
                 <p>
                     “When I was still in primary school, one of my classmates was HIV-positive,” says Collins, a 16-year-old living in Homabay...
                 </p>
-                <button><a href="story1.html">Read More</a></button>
+                <button><a href="story1.php">Read More</a></button>
             </div>
             <!-- Story 2 -->
             <div id="story">
@@ -93,7 +93,7 @@
                 <p>
                     “As I started progressing in high school, I told more people, I didn’t know if they were going to be mean,” Murphy says...
                 </p>
-                <button><a href="story2.html">Read More</a></button>
+                <button><a href="story2.php">Read More</a></button>
             </div>
             <!-- Story 3 -->
             <div id="story">
@@ -102,7 +102,7 @@
                 <p>
                     This journey is tough and you need to have support. My friends really went out of their way to help me adjust to my new medication...
                 </p>
-                <button><a href="story3.html">Read More</a></button>
+                <button><a href="story3.php">Read More</a></button>
             </div>
             <!-- Story 4 -->
             <div id="story">
@@ -111,7 +111,7 @@
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, eveniet, porro similique nam quia quo sunt sit nihil nesciunt.
                 </p>
-                <button><a href="story4.html">Read More</a></button>
+                <button><a href="story4.php">Read More</a></button>
             </div>
           
         </section>
@@ -126,7 +126,7 @@
             <ul>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="about.html">ABOUT</a></li>
-                <li><a href="stories.html">STORIES</a></li>
+                <li><a href="stories.php">STORIES</a></li>
                 <li><a href="info.html">INFO</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
             </ul>
