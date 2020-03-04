@@ -1,3 +1,8 @@
+<?php
+    // echo "dana is stupid!";
+    require('includes/connect.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,7 +23,7 @@
 </head>
 <main>
     <!-- HEADER  -->
-    <header id="header-story1">
+    <header id="header-story3">
         <div id="logo-header">
             <a href="index.html">
                 <img src="images/logo-blue.svg" alt="Blue Logo">
@@ -49,36 +54,32 @@
         </div>
         <!-- Hero Text + Buttons -->
         <div id="hero-text">
-            <h1>FACING STIGMA</h1>
+            <h1>IT DIDN'T SEEM LIKE A BIG DEAL</h1>
         </div>
     </header>
     <!-- BODY -->
     <body>
-        <!-- Story 1 video -->
+        <!-- Story 3 video -->
         <section id="stories-video">
-            <h1 class="hidden">Video Story 1</h1>
-            <iframe src="https://player.vimeo.com/video/201308564" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen controls></iframe>
+            <h1 class="hidden">Video Story 3</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/yiU8nQ_-q9s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
         </section>
 
-        <!-- Story 1 info -->
+        <!-- Story 3 info -->
         <section id="stories-info">
-            <h1 class="hidden">Story 1 information</h1>
+            <h1 class="hidden">Story 3 information</h1>
             <!-- <h1>FACING STIGMA TOGETHER</h1> -->
             <article>
-                “When I was still in primary school, one of my classmates was HIV-positive,” says Collins, a 16-year-old living in Homabay, Kenya. “Since everyone knew he was HIV-positive, people were talking about him. He felt stigma [because of his HIV status] and he rejected his treatment. He did not want to take the drugs.”
-                <br> <br> “Eventually he died,” continues Collins grimly, “…last year.” Collins, who is also living with HIV, keeps his own status secret. He does not want to face the same rejection. <br> <br>
-                <img src="images/stories-1-1.jpg" alt="Afro-american kids playing on school's backyard">
-                The one place at which Collins can talk openly about HIV and other hardships is with his peers at the Kandiege Health Center (supported by the Elizabeth Glaser Pediatric AIDS Foundation), where he picks up his medication. Once a week, Collins attends the Kandiege Ariel Club, a psychosocial support group with about two-dozen other adolescents living with HIV. Together, they learn about HIV—what it is, how to treat it, how to live with it. The group gives them space to share their experiences and emotions with peers who fully understand many of their difficulties and triumphs. <br> <br>
-                <img src="images/stories-1-2.jpg" alt="Afro-american kids attending a meeting at the Kandiege Health Centre">
-                “I came to know about my HIV status from my grandmother,” says Collins. “When I was about 2 years old, my mother died. Then eventually, I fell sick. When I was about 5 years old, I was diagnosed as HIV-positive here at Kandiege. I continued to live with my grandmother until I reached Class 7 [age 12]. <br> <br>
-                “Then my grandmother died, and I lived with my uncle and his wife. They are farmers—they plant crops like maize, beans, and ground nuts. They have tried their best, but they still have not reached good conditions [financially], so I have been sent home for lack of school fees. I have been away from school for some time.” <br> <br>
-                Collins would like to go to college and eventually become an electrical engineer, but as an orphan living with HIV, he is feeling dejected at the moment. His friendships at the Ariel Club are vital. Along with the stigma of living with HIV, other group members know what it is like to grow up without parents and are also experiencing financial insecurity. <br> <br>
-                <img src="images/stories-1-3.jpg" alt="Afro-american kid holding hands">
-                Grace is a 15-year-old who was infected with HIV at the age of 8 when she was raped. “I suffered a lot,” says Grace. “I was afraid. I just kept quiet.” Grace secretly bore the trauma of her sexual assault until she was finally diagnosed with HIV at the age of 12 and received counseling at Kandiege. <br> <br>
-                Support at home is limited. Grace lives with her grandmother and four younger siblings. Her father died of pneumonia when she was a little girl and her mother left shortly after “for greener pastures” in Nairobi. <br> <br>
-                “My grandmother is very old. She just stays at home. I am the one who—after school—I look out for the family. Grandmother is not able to sustain our lives, so I fetch firewood and sell it to buy food. I am in school, but for the past two weeks I was sent home for lack of school fees.” <br> <br>
-                Grace is determined to make it back to school. “I want to be a journalist,” she says, “so that I can teach other girls through the media how to take care of themselves.” <br> <br>
-                
+                I am 25. My sister is the only family I have left. Our parents died when we were still very young. I found out some time later that I was born with HIV and that I would have to live with this virus for the rest of my life. It didn’t seem like a big deal when I first found out. My uncle took me to the hospital and I started taking antiretroviral treatment - that was a pat on the back for him. <br> <br>
+                <img src="images/stories-3-1.jpg" alt="Man alone">
+                As I was growing up so my fear of living with HIV grew. I was grieving a lot and began to live in denial. I used to ask God why? I stigmatised myself. I tried committing suicide several times in high school. I used to stockpile my medication and then throw it down the toilet on my clinic day. <br> <br>
+                I was separated from my sister so I faced all this alone. Later I developed resistance to the first-line drug combination I’d been taking. My viral load was too high and I was sick most of the time. So my doctor recommended that I move to second-line treatment. That was very scary because I thought that it was almost the last option in the HIV world. I was heartbroken but faced the reality of switching medication. <br> <br>
+                I was under other pressures at home and at school but my biggest fear was failing my new treatment. I was also worried about adjusting to the physical side effects of the new drug combination. <br> <br>
+                After a few counselling sessions I switched to second-line treatment, knowing well the side effects that might come with it but also knowing what to do if and when that happened. <br> <br>
+                This journey is tough and you need to have support. My friends really went out of their way to help me adjust to my new medication. <br> <br>
+                Today HIV is not a big deal to me. I can take my medicine in public and I am healthy. If you fight stigma and denial within yourself first it's very easy to live a positive life. <br> <br>
+                <img src="images/stories-3-2.jpg" alt="Friends talking">
+
             </article>
         </section>
 

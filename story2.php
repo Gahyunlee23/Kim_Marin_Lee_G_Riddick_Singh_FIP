@@ -1,3 +1,8 @@
+<?php
+    // echo "dana is stupid!";
+    require('includes/connect.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
