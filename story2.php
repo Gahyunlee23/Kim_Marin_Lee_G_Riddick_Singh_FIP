@@ -1,6 +1,6 @@
 <?php
     // echo "dana is stupid!";
-    require('includes/connect.php');
+    //require('includes/connect.php');
 ?>
 
 <!DOCTYPE html>
@@ -37,7 +37,7 @@
                 <ul>
                     <li><a href="index.html" id="home">HOME</a></li>
                     <li><a href="about.html" id="about">ABOUT</a></li>
-                    <li><a href="stories.html" id="stories">STORIES</a></li>
+                    <li><a href="stories.php" id="stories">STORIES</a></li>
                     <li><a href="info.html" id="info">INFO</a></li>
                     <li><a href="contact.html" id="contact">CONTACT</a></li>
                 </ul>
@@ -93,14 +93,14 @@
             <div id="stories-parent">
                 <img src="images/information-illustration1.svg" alt="Story 2">
                 <h2>SARAH IN 10 YEARS</h2>
-                <button><a href="story2.html"></a>Read More</button>
+                <button><a href="story2.php"></a>Read More</button>
             </div>
 
             <!-- Next next story -->
             <div id="stories-parent">
                 <img src="images/information-illustration2.svg" alt="Story 3">
                 <h2>SARAH IN 10 YEARS</h2>
-                <button><a href="story3.html"></a>Read More</button>
+                <button><a href="story3.php"></a>Read More</button>
             </div>
         </section>
     </body>
@@ -114,7 +114,7 @@
             <ul>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="about.html">ABOUT</a></li>
-                <li><a href="stories.html">STORIES</a></li>
+                <li><a href="stories.php">STORIES</a></li>
                 <li><a href="info.html">INFO</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
             </ul>
