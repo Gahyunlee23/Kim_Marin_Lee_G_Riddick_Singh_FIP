@@ -1,14 +1,15 @@
-<?php 
+<?php
     require_once '../load.php';
+    $ip = $_SERVER['REMOTE_ADDR'];
 
     if(isset($_POST['submit'])) {
         $username = trim($_POST['username']);
         $password = trim($_POST['password']);
 
         if(!empty($username) && !empty($password)) {
-            $message = login($username, $password);
+            $message = login($username, $password, $ip);
         } else {
-            $message = 'Please fill out the field!';
+            $message = 'Please fill out the required field';
         }
     }
 ?>

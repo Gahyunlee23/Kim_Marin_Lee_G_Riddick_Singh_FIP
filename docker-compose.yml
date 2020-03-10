@@ -28,7 +28,7 @@ services:
       - 2233:3306
     environment:
       TZ: America/Toronto
-      MYSQL_DATABASE: db_roku-flashback
+      MYSQL_DATABASE: db_sageComm
       MYSQL_USER: docker_u
       MYSQL_PASSWORD: docker_p
       MYSQL_ROOT_PASSWORD: root
