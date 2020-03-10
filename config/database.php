@@ -4,7 +4,7 @@ class Database
     // Note: specify your own database credentials
     private $host = "localhost";
 
-    private $db_name = "db_";
+    private $db_name = "db_sageComm";
 
     private $username = "root";
 
