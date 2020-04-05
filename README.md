@@ -11,6 +11,8 @@ The #IAmPartoftheCure is a campaign for the [Regional HIV/AIDS Connection](https
 * SASS/CSS
 * AJAX/JS
 * VUE.js
+* PHP
+* MySQL
 
 ### Installing
 
