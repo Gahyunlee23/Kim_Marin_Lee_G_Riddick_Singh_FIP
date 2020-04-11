@@ -15,6 +15,10 @@
     <!-- Fonts links -->
     <link rel="stylesheet" href="https://use.typekit.net/qmt1wjz.css">
 
+    <!-- Vue links -->
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+
     <title>#I am Part of the Cure</title>
 </head>
 <main>
@@ -89,15 +93,15 @@
 
             <!-- Next story -->
             <div id="stories-parent">
-                <img src="images/information-illustration1.svg" alt="Story 2">
-                <h2>SARAH IN 10 YEARS</h2>
+                <img src="images/stories-2-1.jpg" alt="teenager smiling to the camera.">
+                <h2>LIVING AS AN HIV-POSITIVE TEEN</h2>
                 <button><a href="story2.php"></a>Read More</button>
             </div>
 
             <!-- Next next story -->
             <div id="stories-parent">
-                <img src="images/information-illustration2.svg" alt="Story 3">
-                <h2>SARAH IN 10 YEARS</h2>
+                <img src="images/stories-3-1.jpg" alt="Man sitting alone looking at the sunset.">
+                <h2>IT DIDN'T SEEM LIKE A BIG DEAL</h2>
                 <button><a href="story3.php"></a>Read More</button>
             </div>
         </section>

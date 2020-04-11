@@ -16,6 +16,7 @@
 }
 
 //Contact form + Etra info
+
 #contact-parent {
     display: flex;
     flex-direction: column;
@@ -179,6 +180,9 @@
     #contact-parent {
         display: flex;
         flex-direction: row;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
 
         #extra-info {
             width: 50%;
@@ -187,6 +191,8 @@
         #contact-form {
             width: 50%;
         }
+
+        
     }
 }
 
@@ -219,6 +225,7 @@
     }
 
     #contact-parent {
+        width: 87%;
         // #extra-info {
             // height: 60%;
             // margin-top: 35%;
