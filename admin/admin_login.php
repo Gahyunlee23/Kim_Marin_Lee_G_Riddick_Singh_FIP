@@ -1,13 +1,16 @@
 <?php
     require_once '../load.php';
-    $ip = $_SERVER['REMOTE_ADDR'];
+    // $ip = $_SERVER['REMOTE_ADDR'];
+    date_default_timezone_set('America/Toronto');
+    $login_date = date("y-m-d H:i:s");
+    // echo $login_date;
 
     if(isset($_POST['submit'])) {
         $username = trim($_POST['username']);
         $password = trim($_POST['password']);
 
         if(!empty($username) && !empty($password)) {
-            $message = login($username, $password, $ip);
+            $message = login($username, $password, $login_date);
         } else {
             $message = 'Please fill out the required field';
         }
