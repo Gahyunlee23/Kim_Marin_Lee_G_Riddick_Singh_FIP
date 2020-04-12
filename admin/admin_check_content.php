@@ -1,13 +1,12 @@
 <?php
     require_once '../load.php';
-    confirm_logged_in();
-    
+
     if(isset($_GET['id'])) {
         $id = $_GET['id'];
-        $delete_content_result = deleteContent($id);
+        $edit_content_result = editContent($id);
     
-        if(!$delete_content_result) {
-            $message = "Failed to delete content";
+        if(!$edit_content_result) {
+            $message = "Failed to edit content";
         }
     }
 
@@ -18,18 +17,17 @@
         $message = 'failed to bring product info';
     }
 
-
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delete Content</title>
+    <title>Check Story</title>
 </head>
 <body>
-    <h2>Let's delete some stories</h2>
+    <h1>Choose what story you wanna edit</h1>
+
     <?php echo !empty($message)? $message: ''; ?>
     <?php if($contents):?>
     <table>
@@ -38,7 +36,7 @@
                 <td>Story ID</td>
                 <td>Story Title</td>
                 <td>Story Explain</td>
-                <td>Delete</td>
+                <td>Edit</td>
             </tr>
         </thead>
         <?php while($content = $contents->fetch(PDO::FETCH_ASSOC)):?>
@@ -47,7 +45,7 @@
                 <td><?php echo $content['story_id'];?></td>
                 <td><?php echo $content['story_title'];?></td>
                 <td><?php echo $content['story_explain'];?></td>
-                <td><a href="admin_delete_content.php?id=<?php echo $content['story_id'];?>">Delete</a></td>
+                <td><a href="admin_delete_content.php?id=<?php echo $content['story_id'];?>">Edit</a></td>
             </tr>
         <?php endwhile;?>
         </tbody>
