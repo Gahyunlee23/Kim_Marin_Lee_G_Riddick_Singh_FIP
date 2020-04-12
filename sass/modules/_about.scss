@@ -50,7 +50,7 @@
 }
 
 //Mission and Vision - Section
-#mission-vision {
+.mission-vision {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -77,6 +77,27 @@
     #vision {
         width: 50%;
     }
+}
+
+#collapsible-arrow {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1.4em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    cursor: pointer;
+}
+
+.down {
+    transform: rotate(180deg);
+}
+
+.up {
+    transform: rotate(0);
 }
 
 //About us description - Section
@@ -199,7 +220,7 @@
         }
     }
 
-    #mission-vision {
+    .mission-vision {
 
         p {
             margin-left: 20%;
@@ -297,7 +318,7 @@
         }
     }
 
-    #mission-vision {
+    .mission-vision {
         h1 {
             font-size: 6em;
         }
@@ -348,7 +369,7 @@
         }
     }
 
-    #mission-vision {
+    .mission-vision {
         h1 {
             font-size: 6em;
         }

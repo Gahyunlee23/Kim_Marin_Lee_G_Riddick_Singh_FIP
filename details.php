@@ -6,7 +6,7 @@
         $id = $_GET['id'];
         $col = 'story_id';
 
-        $getContent = getSingleContent($tbl, $id, $col);
+        $getContent = getSingleContent($tbl, $col, $id);
     }
 
 ?>
@@ -32,7 +32,8 @@
 </head>
 <main>
     <!-- HEADER  -->
-    <header id="header-story1">
+    <?php while ($item = $getContent->fetch(PDO::FETCH_ASSOC)): ?> 
+    <header id="<?php echo $item['story_background']?>">
         <div id="logo-header">
             <a href="index.html">
                 <img src="images/logo-blue.svg" alt="Blue Logo">
@@ -62,7 +63,7 @@
             </nav>
         </div>
         <!-- Hero Text + Buttons -->
-        <?php while ($item = $getContent->fetch(PDO::FETCH_ASSOC)): ?> 
+        
         <div id="hero-text">
             <h1><?php echo $itme["story_title"]; ?></h1>
         </div>

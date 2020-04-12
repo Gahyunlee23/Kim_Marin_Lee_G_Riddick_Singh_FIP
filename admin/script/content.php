@@ -84,30 +84,47 @@ function deleteContent($id) {
     }
 }
 
-
-function editProduct($id, $img, $name, $color, $rate, $description, $price) {
+function getSingleStory($id) {
     $pdo = Database::getInstance()->getConnection();
-    
-    $edit_pro_query = 'UPDATE tbl_story SET product_img = :product_img, product_name = :product_name, product_color = :product_color, product_rate = :product_rate, product_description = :product_description, product_price = :product_price';
-    $edit_pro_query .= ' WHERE product_id = :id';
-    $set_pro_edit = $pdo->prepare($edit_pro_query);
-    $edit_results = $set_pro_edit->execute(
+
+    $get_str_query = 'SELECT * FROM tbl_story WHERE story_id = :id';
+    $set_str = $pdo->prepare($get_str_query);
+    $get_str_result = $set_str->execute(
         array(
-            ':id' => $id,
-            ':product_img' => $img,
-            ':product_name' => $name,
-            ':product_color' => $color,
-            ':product_rate' => $rate,
-            ':product_description' => $description,
-            ':product_price' => $price
+            ':id' => $id
         )
     );
 
-    // echo $set_pro_edit->debugDumpParams();
+    if($get_str_result && $set_str->rowCount()) {
+        return $set_str;
+    } else {
+        return false;
+    }
+}
+
+
+function editContent($id, $img, $title, $video, $explain, $description) {
+    $pdo = Database::getInstance()->getConnection();
+    
+    $edit_con_query = 'UPDATE tbl_story SET story_id = :id, story_title = :story_title, story_img = :story_img, story_explain = :story_explain, story_description = :story_description, story_video = :story_video';
+    $edit_con_query .= ' WHERE story_id = :id';
+    $set_con_edit = $pdo->prepare($edit_con_query);
+    $edit_results = $set_con_edit->execute(
+        array(
+            ':id' => $id,
+            ':story_img' => $img,
+            ':story_title' => $title,
+            ':story_explain' => $explain,
+            ':story_description' => $description,
+            ':story_video' => $video
+        )
+    );
+
+    // echo $set_con_edit->debugDumpParams();
     // exit;
     
 
-    if($edit_result){
+    if($edit_results){
         redirect_to('index.php');
     }else{
         return 'Update failed...';
@@ -115,25 +132,3 @@ function editProduct($id, $img, $name, $color, $rate, $description, $price) {
 }
 
 
-function searchKeyWord($search) {
-    $pdo = Database::getInstance()->getConnection();
-
-    $search_key_query = 'SELECT * FROM tbl_story WHERE product_name LIKE :search';
-    $set_search = $pdo->prepare($search_key_query);
-    $set_search->bindValue(':search', '%' . $search . '%');
-    $set_results = $set_search->execute(
-        array(
-            ':search' => $search
-        )
-    );
-
-    echo $set_search->debugDumpParams();
-    exit;
-
-    if($set_results) {
-        return $set_results;
-    } else {
-        return false;
-    }
-    
-}
