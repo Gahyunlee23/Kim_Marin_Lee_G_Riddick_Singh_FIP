@@ -14,9 +14,25 @@ The #IAmPartoftheCure is a campaign for the [Regional HIV/AIDS Connection](https
 * PHP
 * MySQL
 
-### Installing
+## Getting Started
+1. Clone the repo
+   ```
+   git clone https://github.com/Gahyunlee23/Kim_Marin_Lee_G_Riddick_Singh_FIP.git
+   ```
 
-* cd to the directory of your choice and hack away!
+3. Open the folder and run docker-compose up
+   ```
+   cd Kim_Marin_Lee_G_Riddick_Singh_FIP
+   docker-compose up
+   ```
+4. Your app is running on
+   ```
+    http://localhost:8020/ 
+   ```
+5. phpMyAdmin is running on
+   ```
+    http://localhost:8031/ 
+   ```
 
 ## Authors
 
