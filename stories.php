@@ -1,8 +1,7 @@
 <?php
     require_once 'load.php';
-    
-    $stroy_table = 'tbl_stories';
-    $getContent = getAll($story_table);
+
+    $getContent = getAll();
 ?>
 
 <!DOCTYPE html>
@@ -72,7 +71,7 @@
                 <img src="images/<?php echo $item["story_img"]; ?>" alt="<?php echo $item["story_img"]; ?>">
                 <h1><?php echo $item["story_title"]; ?></h1>
                 <p><?php echo $item["story_description"]; ?></p>
-                <a href="<?php echo $item["story_title"]; ?>"><?php echo $item["story_title"]; ?></a>
+                <a href="<?php echo $item["story_button"]; ?>"><?php echo $item["story_title"]; ?></a>
             </div>
             <?php endwhile;?>
 
