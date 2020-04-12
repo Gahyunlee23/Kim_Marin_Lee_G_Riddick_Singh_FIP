@@ -1,9 +1,9 @@
 <?php
 
-function getAll($tbl) {
+function getAll() {
     $pdo = Database::getInstance()->getConnection();
 
-    $queryAll = 'SELECT * FROM '.$tbl;
+    $queryAll = 'SELECT * FROM tbl_story';
     $results = $pdo->query($queryAll);
 
     if($results) {
