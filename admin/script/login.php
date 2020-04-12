@@ -1,5 +1,5 @@
 <?php 
-function login($username, $password) {
+function login($username, $password, $login_date) {
 
     $pdo = Database::getInstance()->getConnection();
 
@@ -23,13 +23,44 @@ function login($username, $password) {
             )
         );
 
-        if($user_match) {
-            redirect_to('index.php');
-        } else {
-            return 'Wrong pass!';
+        while($existuser = $user_match->fetch(PDO::FETCH_ASSOC)) {
+            $id = $existuser['login_id'];
+
+            $_SESSION['login_id'] = $id;
+            $_SESSION['login_fname'] = $existuser['login_fname'];
+
+            $update = 'UPDATE tbl_login SET login_date = :login_date WHERE login_id = :id';
+            $user_update = $pdo->prepare($update);
+            $user_update -> execute(
+                array(
+                    ':login_date'=>$login_date,
+                    ':id'=>$id
+                )
+            );
         }
+        
+        if(isset($id)){
+            redirect_to('index.php');
+            return 'You logged in successfully!';
+        }else{
+
+            return 'Wrong pass';
+        }
+
+        
     } else { 
         return 'User does not exist!';
     }
 
+}
+
+function confirm_logged_in() {
+    if(!isset($_SESSION['login_id'])) {
+        redirect_to('admin_login.php');
+    }
+}
+
+function logout() {
+    session_destroy();
+    redirect_to('admin_login.php');
 }
