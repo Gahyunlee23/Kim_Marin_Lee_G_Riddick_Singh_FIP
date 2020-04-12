@@ -1,7 +1,8 @@
 <?php
     require_once 'load.php';
 
-    $getContent = getAll();
+    $story = 'tbl_story';
+    $getContent = getAll($story);
 ?>
 
 <!DOCTYPE html>
@@ -70,6 +71,7 @@
         <div id="story">
                 <img src="images/<?php echo $item["story_img"]; ?>" alt="<?php echo $item["story_img"]; ?>">
                 <h1><?php echo $item["story_title"]; ?></h1>
+                <iframe width="450" height="315" src="<?php echo $item["story_video"]; ?>"></iframe>
                 <p><?php echo $item["story_description"]; ?></p>
                 <a href="<?php echo $item["story_button"]; ?>"><?php echo $item["story_title"]; ?></a>
             </div>
