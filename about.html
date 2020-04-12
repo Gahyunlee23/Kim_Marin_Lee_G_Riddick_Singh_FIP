@@ -13,6 +13,13 @@
 
     <!-- Fonts links -->
     <link rel="stylesheet" href="https://use.typekit.net/qmt1wjz.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+
+
+    <!-- Vue links -->
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
 
     <title>#I am Part of the Cure</title>
 </head>
@@ -58,19 +65,21 @@
     <!-- BODY -->
     <body>
         <!-- Mission + Vision Section -->
-        <section id="mission-vision">
+        <section id="app" class="mission-vision">
             <h1 class="hidden">Our mission and vision.</h1>
             <!-- Mission -->
             <div id="mission">
                 <h1>MISSION</h1>
-                <p>
+                <button id="collapsible-arrow" v-on:click="isHidden = !isHidden"><i class="fas fa-chevron-down"></i></button>
+                <p v-if="isHidden">
                     The RHAC has set out to eliminate the stigma surrounding people who live with or are at risk from HIV, AIDs, and HEP C. 
                 </p>
             </div>
             <!-- Vision -->
             <div id="vision">
                 <h1>VISION</h1>
-                <p>
+                <button id="collapsible-arrow" v-on:click="isHidden = !isHidden"><i class="fas fa-chevron-down"></i></button>
+                <p v-if="isHidden">
                     Our service users include people living with HIV, AIDS, their partners/family, as well as those concerned.
                 </p>
             </div>
