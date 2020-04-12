@@ -83,9 +83,9 @@
                 <div id="story">
                     <img src="images/<?php echo $item["story_img"]; ?>" alt="<?php echo $item["story_img"]; ?>">
                     <h1><?php echo $item["story_title"]; ?></h1>
-                    <p><?php echo $item["story_short_des"]; ?></p>
+                    <p><?php echo $item["story_explain"]; ?></p>
                     <button>
-                        <a href="<?php echo $item["story_button"]; ?>">Read More</a>
+                        <a href="details.php?id=<?php echo $item["story_id"] ?>">Read More</a>
                     </button>
                 </div>
         <?php endwhile;?>
@@ -100,7 +100,7 @@
             </div>
         </section>
     </main>         
-    <!-- <iframe width="450" height="315" src="<?php echo $item["story_video"]; ?>"></iframe> -->
+    <!-- <iframe width="450" height="315" src=""></iframe> -->
        <!-- FOOTER -->
     <footer>
         <a href="index.html">

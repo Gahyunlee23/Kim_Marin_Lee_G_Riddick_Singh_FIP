@@ -1,18 +1,5 @@
 <?php
 
-function getAll($tbl) {
-    $pdo = Database::getInstance()->getConnection();
-
-    $queryAll = 'SELECT * FROM '.$tbl;
-    $results = $pdo->query($queryAll);
-
-    if($results) {
-        return $results;
-    } else {
-        return 'There was a problem accessing this info';
-    }
-};
-
 function addContent($content) {
     // var_dump($content);
     try {
@@ -79,50 +66,29 @@ function getContent() {
     
 }
 
-function deleteProduct($id) {
+function deleteContent($id) {
     $pdo = Database::getInstance()->getConnection();
 
-    $delete_pro_query = 'DELETE FROM tbl_product WHERE product_id = :id';
-    $delete_pro_set = $pdo->prepare($delete_pro_query);
-    $delete_results = $delete_pro_set->execute(
+    $delete_con_query = 'DELETE FROM tbl_story WHERE story_id = :id';
+    $delete_con_set = $pdo->prepare($delete_con_query);
+    $delete_results = $delete_con_set->execute(
         array(
             ':id' => $id
         )
     );
 
-    if($delete_results && $delete_pro_set->rowCount() > 0) {
+    if($delete_results && $delete_con_set->rowCount() > 0) {
         redirect_to('index.php');
     } else {
         return false;
     }
 }
 
-function getSingleProduct($id) {
-    $pdo = Database::getInstance()->getConnection();
-
-    $get_product_query = 'SELECT * FROM tbl_product WHERE product_id = :id';
-    $get_product_set = $pdo->prepare($get_product_query);
-    $get_product_result = $get_product_set->execute(
-        array(
-            ':id'=>$id
-        )
-    );
-    // echo $get_product_set->debugDumpParams();
-    // exit;
-
-    if($get_product_result && $get_product_set->rowCount()){
-        return $get_product_set;
-    }else{
-        return false;
-    }
-
-    
-}
 
 function editProduct($id, $img, $name, $color, $rate, $description, $price) {
     $pdo = Database::getInstance()->getConnection();
     
-    $edit_pro_query = 'UPDATE tbl_product SET product_img = :product_img, product_name = :product_name, product_color = :product_color, product_rate = :product_rate, product_description = :product_description, product_price = :product_price';
+    $edit_pro_query = 'UPDATE tbl_story SET product_img = :product_img, product_name = :product_name, product_color = :product_color, product_rate = :product_rate, product_description = :product_description, product_price = :product_price';
     $edit_pro_query .= ' WHERE product_id = :id';
     $set_pro_edit = $pdo->prepare($edit_pro_query);
     $edit_results = $set_pro_edit->execute(
@@ -152,7 +118,7 @@ function editProduct($id, $img, $name, $color, $rate, $description, $price) {
 function searchKeyWord($search) {
     $pdo = Database::getInstance()->getConnection();
 
-    $search_key_query = 'SELECT * FROM tbl_product WHERE product_name LIKE :search';
+    $search_key_query = 'SELECT * FROM tbl_story WHERE product_name LIKE :search';
     $set_search = $pdo->prepare($search_key_query);
     $set_search->bindValue(':search', '%' . $search . '%');
     $set_results = $set_search->execute(
