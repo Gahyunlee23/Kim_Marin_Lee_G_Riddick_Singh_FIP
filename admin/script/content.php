@@ -13,12 +13,12 @@ function getAll($tbl) {
     }
 };
 
-function addProduct($product) {
-    // var_dump($product);
+function addContent($content) {
+    // var_dump($content);
     try {
         $pdo = Database::getInstance()->getConnection();
 
-        $img = $product['img'];
+        $img = $content['img'];
         $upload_file = pathinfo($img['name']);
         $accepted_types = array('gif', 'jpg', 'jpeg', 'jpe', 'png', 'webp', 'JPG');
         if(!in_array($upload_file['extension'], $accepted_types)) {
@@ -38,34 +38,23 @@ function addProduct($product) {
 
 
         
-        $add_product_query = 'INSERT INTO tbl_product(product_img, product_name, product_color, product_rate, product_description, product_price)';
-        $add_product_query .= ' VALUE(:product_img, :product_name, :product_color, :product_rate, :product_description, :product_price)';
+        $add_content_query = 'INSERT INTO tbl_story(story_title, story_img, story_description, story_video, story_explain)';
+        $add_content_query .= ' VALUE(:story_title, :story_img, :story_description, :story_video, :story_explain)';
         
-        $set_product = $pdo->prepare($add_product_query);
-        $add_product_result = $set_product->execute(
+        $set_content = $pdo->prepare($add_content_query);
+        $add_content_result = $set_content->execute(
             array(
-                ':product_img' => $generated_filename,
-                ':product_name' => $product['name'],
-                ':product_color' => $product['color'],
-                ':product_rate' => $product['rate'],
-                ':product_description' => $product['description'],
-                ':product_price' => $product['price'],
+                ':story_title' => $content['title'],
+                ':story_img' => $generated_filename,
+                ':story_video' => $content['video'],
+                ':story_explain' => $content['explain'],
+                ':story_description' => $content['description'],
             )
         );
 
-        $last_uploaded_id = $pdo->lastInsertId();
-        
-        if($add_product_result && !empty($last_uploaded_id)) {
-            $update_category_query = 'INSERT INTO tbl_cat_pro(product_id, category_id) VALUE (:product_id, :category_id)';
-            $update_category = $pdo->prepare($update_category_query);
-            $update_category->execute(
-                array(
-                    ':product_id' => $last_uploaded_id,
-                    'category_id' => $product['category']
-                )
-            );
-           
-        }
+        //    echo $set_content->debugDumpParams();
+        //    exit;
+    
 
         redirect_to('index.php');
 
@@ -79,7 +68,7 @@ function addProduct($product) {
 function getContent() {
     $pdo = Database::getInstance()->getConnection();
 
-    $get_all_pro = 'SELECT * FROM tbl_';
+    $get_all_pro = 'SELECT * FROM '.$tbl;
     $get_all = $pdo->query($get_all_pro);
 
     if($get_all) {

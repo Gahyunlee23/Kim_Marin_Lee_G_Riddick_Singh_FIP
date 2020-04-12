@@ -20,6 +20,10 @@
     <a href="admin_delete_user.php">Delete User</a>
     <a href="admin_edit_user.php">Edit User</a>
 
+    <a href="admin_create_content.php">Add Story</a>
+    <a href="admin_check_content.php">Edit Story</a>
+    <a href="admin_delete_content.php">Delete Story</a>
+
     
 </body>
 </html>

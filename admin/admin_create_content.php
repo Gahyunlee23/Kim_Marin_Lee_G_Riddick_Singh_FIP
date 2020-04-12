@@ -6,12 +6,10 @@ if(isset($_POST['submit'])) {
   
     $content = array(
         'img' => $_FILES['img'],
-        'name' => trim($_POST['name']),
-        'rate' => trim($_POST['rate']),
-        'price' => trim($_POST['price']),
+        'title' => trim($_POST['title']),
+        'video' => trim($_POST['video']),
+        'explain' => trim($_POST['explain']),
         'description' => trim($_POST['description']),
-        'color' => trim($_POST['color']),
-        'category' => trim($_POST['catList']),
     );
 
     $result = addContent($content);
@@ -31,28 +29,24 @@ if(isset($_POST['submit'])) {
 <body>
     <h2>Add New Story!</h2>
     <?php echo !empty($message)? $message:''; ?>
-        <form action="admin_add_content.php" method="post" enctype="multipart/form-data">
+        <form action="admin_create_content.php" method="post" enctype="multipart/form-data">
 
             <label>Story Image:</label><br>
             <input type="file" name="img" value=""><br><br>
 
             <label>Story Title:</label><br>
-            <input type="text" name="name" value=""><br><br>
-
-            <label>Story Description:</label><br>
-            <input type="text" name="rate" value=""><br><br>
+            <input type="text" name="title" value=""><br><br>
 
             <label>Story Video Link:</label><br>
-            <input type="text" name="price" value=""><br><br>
+            <input type="text" name="video" value=""><br><br>
 
-            <label>Product Color:</label><br>
-            <input type="text" name="color" value=""><br><br>
+            <label>Story Explain:</label><br>
+            <input type="text" name="explain" value=""><br><br>
 
-            <label>Product Description:</label><br>
-            <textarea name="description"></textarea><br><br>
-
-
-            <button type="submit" name="submit">Add Product</button>
+            <label>Story Description:</label><br>
+            <textarea type="text" name="description" value=""></textarea><br><br>
+            
+            <button type="submit" name="submit">Add Content</button>
         </form>
 </body>
 </html>
