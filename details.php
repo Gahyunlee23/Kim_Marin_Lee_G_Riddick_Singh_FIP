@@ -6,7 +6,7 @@
         $id = $_GET['id'];
         $col = 'story_id';
 
-        $getContent = getSingleContent($tbl, $id, $col);
+        $getContent = getSingleContent($tbl, $col, $id);
     }
 
 ?>

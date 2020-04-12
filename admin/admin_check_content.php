@@ -45,7 +45,7 @@
                 <td><?php echo $content['story_id'];?></td>
                 <td><?php echo $content['story_title'];?></td>
                 <td><?php echo $content['story_explain'];?></td>
-                <td><a href="admin_delete_content.php?id=<?php echo $content['story_id'];?>">Edit</a></td>
+                <td><a href="admin_edit_content.php?id=<?php echo $content['story_id'];?>">Edit</a></td>
             </tr>
         <?php endwhile;?>
         </tbody>
