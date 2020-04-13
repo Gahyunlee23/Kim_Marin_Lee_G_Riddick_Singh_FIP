@@ -41,7 +41,7 @@
                 <ul>
                     <li><a href="index.html" id="home">HOME</a></li>
                     <li><a href="about.html" id="about">ABOUT</a></li>
-                    <li><a href="stories.html" id="stories">STORIES</a></li>
+                    <li><a href="stories.php" id="stories">STORIES</a></li>
                     <li><a href="info.html" id="info">INFO</a></li>
                     <li><a href="contact.html" id="contact">CONTACT</a></li>
                 </ul>
@@ -111,7 +111,7 @@
             <ul>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="about.html">ABOUT</a></li>
-                <li><a href="stories.html">STORIES</a></li>
+                <li><a href="stories.php">STORIES</a></li>
                 <li><a href="info.html">INFO</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
             </ul>
