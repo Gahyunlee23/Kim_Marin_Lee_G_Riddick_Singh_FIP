@@ -17,6 +17,12 @@
     top: 0;
     left: 0;
     width: 100%;
+    display: none;
+
+    video {
+        max-width: 200%;
+        width: 100%;
+    }
 }
 
 #header-index {
@@ -28,8 +34,10 @@
     #logo-header {
         img {
             max-width: 25%;
-            margin: 5% 0 0 5%;
+            margin: 2em 0 0 2em;
             position: absolute;
+            top: 0;
+            left: 0;
         }
     }
 
@@ -62,8 +70,10 @@
 
         button {
             background-color: $green;
-            padding: 1% 4%;
-            margin: 0 5% 10% 5%;
+            padding: 0.3em 1em;
+            margin-top: 15em;
+            margin-left: 1em;
+            margin-right: 1em;
             font-family: $text;
             font-size: 1em;
             border: transparent;
@@ -279,13 +289,35 @@
         }
         #hero-buttons {
             padding-top: 0%;
+            margin-top: -6em;
+        }
 
-            button {
-                padding: 0.5% 3%;
-            }
+        #hero-text {
+            margin-top: -6em;
         }
     }
 
+    #video-container {
+        display: block;
+    }
+
+    #header-index {
+        background-image: none;
+    }
+
+}
+
+//media query 1400px ---DESKTOP XLARGE---
+@media screen and (min-width: 87.5em) {
+    #header-index {
+        #hero-buttons {
+            margin-top: 2em;
+        }
+
+        #hero-text {
+            margin-top: 0;
+        }
+    }
 }
 
 //media query 1500px ---DESKTOP XLARGE---
