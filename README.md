@@ -34,10 +34,10 @@ The #IAmPartoftheCure is a campaign for the [Regional HIV/AIDS Connection](https
     http://localhost:8031/ 
    ```
 6. Admin credentials:
-```
-   username: trevor
-   password: password
-```
+   ```
+    username: trevor
+    password: password
+   ```
 
 ## Authors
 
