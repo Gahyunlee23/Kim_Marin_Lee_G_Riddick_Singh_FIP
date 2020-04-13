@@ -95,7 +95,7 @@
             display: block;
             margin-left: auto;
             margin-right: auto;
-            max-width: 70%;
+            max-width: 100%;
             margin-bottom: 10%;
         }
 
@@ -143,6 +143,26 @@
     }
 }
 
+#for-more-info {
+    font-family: $text;
+    color: white;
+    font-size: 1em;
+    width: 90%;
+    text-align: left;
+    margin-top: 20%;
+    margin-bottom: 5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+        a {
+            text-decoration: none;
+            color: $yellow;
+            font-family: $text;
+            font-size: 1em;
+        }
+}
+
 //----------------> QUERIES
 //media query 667px ---MOBILE LANDSCAPE---
 @media screen and (min-width: 41.6875em) {
@@ -154,6 +174,12 @@
                 max-width: 15%;
             }
         }
+    }
+
+    #for-more-info {
+        width: 80%;
+        text-align: center;
+        margin-top: 6em;
     }
 }
 
@@ -205,7 +231,7 @@
             justify-content: center;
 
             img {
-                width: 40%;
+                width: 60%;
             }
         }
 
@@ -247,6 +273,11 @@
         }
     }
 
+    #for-more-info {
+        width: 50em;
+        font-size: 1em;
+    }
+
 }
 
 //media query 1500px ---DESKTOP XLARGE---
@@ -255,6 +286,44 @@
         #logo-header {
             img {
                 width: 8%;
+            }
+        }
+    }
+
+    #for-more-info {
+        width: 50em;
+        font-size: 1.5em;
+    }
+}
+
+//media query 1570px ---DESKTOP XLARGE---
+@media screen and (min-width: 98.125em) {
+    #info-text {
+        #flex-parent {
+            #flex-child {
+                p {
+                    width: 20em;
+                    margin-left: auto;
+                    margin-right: auto;
+                    text-align: left;
+                }
+
+                h2 {
+                    margin-top: 24%;
+                }
+            }
+
+            #flex-child-middle {
+                p {
+                    width: 20em;
+                    margin-left: auto;
+                    margin-right: auto;
+                    text-align: left;
+                }
+
+                h2 {
+                    margin-top: 24%;
+                }
             }
         }
     }
