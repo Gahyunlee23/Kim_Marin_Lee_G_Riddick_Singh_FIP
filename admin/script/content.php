@@ -23,10 +23,8 @@ function addContent($content) {
             throw new Exception('Failed to load file, check permission');
         }
 
-
-        
-        $add_content_query = 'INSERT INTO tbl_story(story_title, story_img, story_description, story_video, story_explain)';
-        $add_content_query .= ' VALUE(:story_title, :story_img, :story_description, :story_video, :story_explain)';
+        $add_content_query = 'INSERT INTO tbl_story(story_title, story_img, story_description, story_video, story_explain, story_background)';
+        $add_content_query .= ' VALUE(:story_title, :story_img, :story_description, :story_video, :story_explain, :story_background)';
         
         $set_content = $pdo->prepare($add_content_query);
         $add_content_result = $set_content->execute(
@@ -36,11 +34,12 @@ function addContent($content) {
                 ':story_video' => $content['video'],
                 ':story_explain' => $content['explain'],
                 ':story_description' => $content['description'],
+                ':story_background' => $content['background']
             )
         );
 
-        //    echo $set_content->debugDumpParams();
-        //    exit;
+           echo $set_content->debugDumpParams();
+           exit;
     
 
         redirect_to('index.php');
@@ -103,10 +102,10 @@ function getSingleStory($id) {
 }
 
 
-function editContent($id, $img, $title, $video, $explain, $description) {
+function editContent($id, $img, $title, $video, $explain, $description, $background) {
     $pdo = Database::getInstance()->getConnection();
     
-    $edit_con_query = 'UPDATE tbl_story SET story_id = :id, story_title = :story_title, story_img = :story_img, story_explain = :story_explain, story_description = :story_description, story_video = :story_video';
+    $edit_con_query = 'UPDATE tbl_story SET story_id = :id, story_title = :story_title, story_img = :story_img, story_explain = :story_explain, story_description = :story_description, story_video = :story_video, story_background = :story_background';
     $edit_con_query .= ' WHERE story_id = :id';
     $set_con_edit = $pdo->prepare($edit_con_query);
     $edit_results = $set_con_edit->execute(
@@ -116,7 +115,8 @@ function editContent($id, $img, $title, $video, $explain, $description) {
             ':story_title' => $title,
             ':story_explain' => $explain,
             ':story_description' => $description,
-            ':story_video' => $video
+            ':story_video' => $video,
+            ':story_background' => $background
         )
     );
 
