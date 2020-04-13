@@ -10,6 +10,7 @@ if(isset($_POST['submit'])) {
         'video' => trim($_POST['video']),
         'explain' => trim($_POST['explain']),
         'description' => trim($_POST['description']),
+        'background' => trim($_POST['background'])
     );
 
     $result = addContent($content);
@@ -45,6 +46,9 @@ if(isset($_POST['submit'])) {
 
             <label>Story Description:</label><br>
             <textarea type="text" name="description" value=""></textarea><br><br>
+
+            <label>Story Background:</label><br>
+            <input type="text" name="background" value=""><br><br>
             
             <button type="submit" name="submit">Add Content</button>
         </form>
