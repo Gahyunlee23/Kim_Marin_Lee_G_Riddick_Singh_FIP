@@ -23,7 +23,7 @@
     <!-- Fonts links -->
     <link rel="stylesheet" href="https://use.typekit.net/qmt1wjz.css">
 
-    <title>#I am Part of the Cure</title>
+    <title>I am Part of the Cure</title>
 </head>
 <body>
     <!-- HEADER  -->

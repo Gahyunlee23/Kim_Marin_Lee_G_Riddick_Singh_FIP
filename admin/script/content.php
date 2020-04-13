@@ -38,8 +38,8 @@ function addContent($content) {
             )
         );
 
-           echo $set_content->debugDumpParams();
-           exit;
+        //    echo $set_content->debugDumpParams();
+        //    exit;
     
 
         redirect_to('index.php');
