@@ -1,0 +1,7 @@
+Admin credentials:
+
+Username: spiderpan 
+Password: password
+
+
+Link: http://localhost:8020/admin/admin_login.php
