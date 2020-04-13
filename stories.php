@@ -70,9 +70,9 @@
         <!-- Stories Description -->    
          <section id="stories-description">
             <h1 class="hidden">Stories description</h1>
-            <h1>SOME TITLE</h1>
+            <h1>REAL PEOPLE, REAL STRUGGLE</h1>
             <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus in omnis neque quas quo dolorum repellendus soluta, aspernatur impedit atque placeat qui architecto cumque laborum nihil aperiam facilis facere nesciunt.
+                Read more about how HIV has affected people in different communities across the Earth and why stigma-elimination is so important.            
             </p>
         </section>
     <!-- Individual stories (grid) -->
@@ -91,10 +91,10 @@
         <?php endwhile;?>
             <!-- Coming soon placeholder -->
             <div id="story">
-                <img src="images/more-coming-soon.jpg" alt="Afro-American kids playing on school's backyard.">
-                <h1>THIS IS THE TITLE</h1>
+                <img src="images/more-coming-soon.jpg" alt="More stories coming soon.">
+                <h1>WE WANT TO READ YOU!</h1>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, eveniet, porro similique nam quia quo sunt sit nihil nesciunt.
+                    We are happy to read you if you want to share your story with our comunity. Please check our contact page for more info!
                 </p>
                 <button><a href="story4.html">Read More</a></button>
             </div>
